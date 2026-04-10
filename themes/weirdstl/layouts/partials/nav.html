@@ -4,5 +4,8 @@
     <li><a href="{{ "/historical/" | relURL }}">Historical</a></li>
     <li><a href="{{ "/current/" | relURL }}">Current</a></li>
   </ul>
-  <a class="bmc-btn" href="{{ .Site.Params.buymeacoffee_url }}" target="_blank" rel="noopener">☕ Buy Me a Coffee</a>
+  <div class="nav-right">
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode" onclick="toggleTheme()">☀</button>
+    <a class="bmc-btn" href="{{ .Site.Params.buymeacoffee_url }}" target="_blank" rel="noopener">☕ Buy Me a Coffee</a>
+  </div>
 </nav>

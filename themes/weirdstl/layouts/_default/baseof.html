@@ -1,7 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   {{ partial "head.html" . }}
+  <script>
+    (function() {
+      var saved = localStorage.getItem('weirdstl-theme');
+      document.documentElement.setAttribute('data-theme', saved || 'dark');
+    })();
+    function toggleTheme() {
+      var html = document.documentElement;
+      var next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', next);
+      localStorage.setItem('weirdstl-theme', next);
+      var btn = document.getElementById('theme-toggle');
+      if (btn) btn.textContent = next === 'dark' ? '☀' : '☾';
+    }
+  </script>
 </head>
 <body>
   {{ partial "masthead.html" . }}
