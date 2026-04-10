@@ -1,6 +1,7 @@
-<article class="story-card story-card--{{ .Params.content_type | default "historical" }}">
-  <span class="badge badge--{{ .Params.content_type | default "historical" }}">
-    {{ if eq (.Params.content_type | default "historical") "current" }}CURRENT{{ else }}HISTORICAL{{ end }}
+{{ $ctype := .Params.content_type | default .Type | default "historical" }}
+<article class="story-card story-card--{{ $ctype }}">
+  <span class="badge badge--{{ $ctype }}">
+    {{ if eq $ctype "current" }}CURRENT{{ else }}HISTORICAL{{ end }}
   </span>
   {{ if .Params.map_pin }}
   <span class="map-pin" title="St. Louis location">&#x1F4CC;</span>

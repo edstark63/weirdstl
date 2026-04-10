@@ -1,8 +1,9 @@
 {{ define "main" }}
+{{ $ctype := .Params.content_type | default .Type | default "historical" }}
 <article class="single-post">
   <header class="single-header">
-    <span class="badge badge--{{ .Params.content_type | default "historical" }}">
-      {{ if eq (.Params.content_type | default "historical") "current" }}CURRENT{{ else }}HISTORICAL{{ end }}
+    <span class="badge badge--{{ $ctype }}">
+      {{ if eq $ctype "current" }}CURRENT{{ else }}HISTORICAL{{ end }}
     </span>
     {{ if .Params.map_pin }}
     <span class="map-pin" title="St. Louis location">&#x1F4CC;</span>
@@ -16,6 +17,18 @@
   <div class="single-body">
     {{ .Content }}
   </div>
+
+  {{ if .Params.further_reading }}
+  <section class="dig-deeper">
+    <hr class="post-rule">
+    <h2 class="dig-deeper__heading">Dig Deeper</h2>
+    <div class="dig-deeper__links">
+      {{ range .Params.further_reading }}
+      <a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
 
   <hr class="post-rule">
 

@@ -336,6 +336,38 @@ a:hover { color: var(--rust); }
   margin: 1em 0;
 }
 
+/* ─── Dig Deeper ────────────────────────────────────────────────────────────── */
+.dig-deeper {
+  margin-top: 1.5rem;
+}
+
+.dig-deeper__heading {
+  font-size: 0.6rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+  font-family: Georgia, serif;
+}
+
+.dig-deeper__links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.dig-deeper__links a {
+  font-size: 0.82rem;
+  font-style: italic;
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.dig-deeper__links a:hover { color: var(--rust); }
+
 /* ─── Post Nav ──────────────────────────────────────────────────────────────── */
 .post-nav {
   display: flex;
