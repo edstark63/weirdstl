@@ -25,6 +25,23 @@
         }, 50);
       }
     }
+    function handleShare(btn) {
+      var url = btn.dataset.url;
+      var title = btn.dataset.title;
+      if (navigator.share) {
+        navigator.share({ title: title, url: url }).catch(function() {});
+      } else {
+        navigator.clipboard.writeText(url).then(function() {
+          var orig = btn.getAttribute('aria-label');
+          btn.setAttribute('aria-label', 'Copied!');
+          btn.classList.add('share-icon-btn--copied');
+          setTimeout(function() {
+            btn.setAttribute('aria-label', orig);
+            btn.classList.remove('share-icon-btn--copied');
+          }, 1500);
+        });
+      }
+    }
     function copyShareLink(btn) {
       navigator.clipboard.writeText(btn.dataset.url).then(function() {
         var orig = btn.textContent;
