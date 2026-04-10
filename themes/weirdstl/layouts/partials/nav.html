@@ -5,6 +5,7 @@
     <li><a href="{{ "/current/" | relURL }}">Current</a></li>
   </ul>
   <div class="nav-right">
+    <button class="search-toggle" aria-label="Toggle search" onclick="toggleSearch()">&#x2315;</button>
     <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode" onclick="toggleTheme()">☀</button>
     <a class="bmc-btn" href="{{ .Site.Params.buymeacoffee_url }}" target="_blank" rel="noopener">☕ Buy Me a Coffee</a>
   </div>

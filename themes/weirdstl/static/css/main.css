@@ -14,6 +14,17 @@
   --muted:       #9A8060;
   --card-bg:     #221808;
   --card-border: #3A2810;
+
+  /* Pagefind UI */
+  --pagefind-ui-scale: 0.9;
+  --pagefind-ui-primary: #C8A96E;
+  --pagefind-ui-text: #F4EFE0;
+  --pagefind-ui-background: #221808;
+  --pagefind-ui-border: #3A2810;
+  --pagefind-ui-tag: #1A1208;
+  --pagefind-ui-border-width: 1px;
+  --pagefind-ui-border-radius: 2px;
+  --pagefind-ui-font: Georgia, 'Times New Roman', serif;
 }
 
 [data-theme="light"] {
@@ -23,6 +34,17 @@
   --muted:       #3A2810;
   --card-bg:     #FDFAF4;
   --card-border: #C8B99A;
+
+  /* Pagefind UI */
+  --pagefind-ui-scale: 0.9;
+  --pagefind-ui-primary: #7A3B1E;
+  --pagefind-ui-text: #1A1008;
+  --pagefind-ui-background: #F5F0E2;
+  --pagefind-ui-border: #C8B99A;
+  --pagefind-ui-tag: #F5F0E2;
+  --pagefind-ui-border-width: 1px;
+  --pagefind-ui-border-radius: 2px;
+  --pagefind-ui-font: Georgia, 'Times New Roman', serif;
 }
 
 html { font-size: 16px; scroll-behavior: smooth; }
@@ -158,6 +180,20 @@ a:hover { color: var(--rust); }
   gap: 0.6rem;
 }
 
+.search-toggle {
+  background: none;
+  border: 1px solid var(--rule);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+  line-height: 1;
+  font-family: Georgia, serif;
+}
+
+.search-toggle:hover { border-color: var(--text); }
+
 .theme-toggle {
   background: none;
   border: 1px solid var(--rule);
@@ -171,6 +207,21 @@ a:hover { color: var(--rust); }
 }
 
 .theme-toggle:hover { border-color: var(--text); }
+
+/* ─── Search Panel ──────────────────────────────────────────────────────────── */
+.search-panel {
+  display: none;
+  padding: 1rem 0 0.5rem;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 1.5rem;
+}
+
+.search-panel.is-open { display: block; }
+
+/* Override Pagefind result link color */
+.pagefind-ui__result-link { color: var(--text) !important; }
+.pagefind-ui__result-link:hover { color: var(--rust) !important; }
+.pagefind-ui__message { color: var(--muted); font-style: italic; font-size: 0.85rem; }
 
 .bmc-btn {
   font-size: 0.78rem;
