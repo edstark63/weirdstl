@@ -403,13 +403,17 @@ a:hover { color: var(--rust); }
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  margin-bottom: 0;
+  margin-bottom: 0.4rem;
 }
 
 .single-header__tags {
   display: flex;
   align-items: center;
   gap: 0.4rem;
+}
+
+.single-header__tags .badge {
+  margin-bottom: 0;
 }
 
 .single-date {
