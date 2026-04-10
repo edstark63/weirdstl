@@ -398,11 +398,18 @@ a:hover { color: var(--rust); }
   margin: 0.4rem 0 0.3rem;
 }
 
-.single-meta {
+.single-header__top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  margin-bottom: 0;
+}
+
+.single-header__tags {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
 .single-date {
@@ -412,13 +419,19 @@ a:hover { color: var(--rust); }
 }
 
 .share-icon-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
   background: none;
   border: none;
-  padding: 0.2rem;
+  padding: 0;
   cursor: pointer;
   color: var(--muted);
-  line-height: 0;
-  border-radius: 3px;
+  font-size: 0.72rem;
+  font-style: italic;
+  font-family: Georgia, serif;
+  letter-spacing: 0.04em;
+  line-height: 1;
   flex-shrink: 0;
   transition: color 0.15s;
 }
