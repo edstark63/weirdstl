@@ -1,0 +1,12 @@
+<article class="story-card story-card--{{ .Params.content_type | default "historical" }}">
+  <span class="badge badge--{{ .Params.content_type | default "historical" }}">
+    {{ if eq (.Params.content_type | default "historical") "current" }}CURRENT{{ else }}HISTORICAL{{ end }}
+  </span>
+  {{ if .Params.map_pin }}
+  <span class="map-pin" title="St. Louis location">&#x1F4CC;</span>
+  {{ end }}
+  <h2 class="card-headline"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+  <p class="card-date">{{ .Date.Format "January 2, 2006" }}</p>
+  <p class="card-excerpt">{{ .Summary | plainify }}</p>
+  <a class="card-readmore" href="{{ .RelPermalink }}">Read more &#x203A;</a>
+</article>

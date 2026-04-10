@@ -1,0 +1,412 @@
+/* ─── Reset & Base ─────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --parchment:  #F5F0E2;
+  --ink:        #1A1008;
+  --rust:       #7A3B1E;
+  --rule:       #C8B99A;
+  --card-bg:    #FDFAF4;
+  --muted:      #6B5744;
+  --green:      #2C4A1E;
+}
+
+html { font-size: 16px; scroll-behavior: smooth; }
+
+body {
+  background: var(--parchment);
+  color: var(--ink);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 1.6;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+a { color: var(--ink); text-decoration: underline; text-underline-offset: 2px; }
+a:hover { color: var(--rust); }
+
+/* ─── Masthead ──────────────────────────────────────────────────────────────── */
+.masthead {
+  text-align: center;
+  padding: 0.5rem 0 0;
+  position: relative;
+}
+
+.mast-rule {
+  border: none;
+  border-top: 1px solid var(--ink);
+  margin: 0;
+}
+
+.mast-rule--top { margin-bottom: 0; }
+.mast-rule--bottom { border-top-width: 1.5px; margin-top: 0; }
+
+.utility-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 0;
+  font-size: 8px;
+  font-style: italic;
+  color: var(--ink);
+  font-family: Georgia, serif;
+  letter-spacing: 0.03em;
+}
+
+.utility-location {
+  font-style: normal;
+  letter-spacing: 0.12em;
+}
+
+.utility-update {
+  font-style: normal;
+  letter-spacing: 0.06em;
+}
+
+.mast-the {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  margin: 0.3rem 0 0;
+  color: var(--ink);
+}
+
+.mast-title {
+  font-size: clamp(3rem, 9vw, 6.5rem);
+  font-weight: bold;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: -0.02em;
+  line-height: 0.9;
+  margin: 0;
+}
+
+.mast-title a {
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.mast-title a:hover { color: var(--rust); }
+
+.mast-tagline {
+  font-size: 0.62rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0.4rem 0 0;
+  color: var(--ink);
+}
+
+/* Mask descenders on the title */
+.mast-descender-mask {
+  height: 0.45rem;
+  background: var(--parchment);
+  margin-top: -0.45rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* ─── Navigation ────────────────────────────────────────────────────────────── */
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--ink);
+  font-style: italic;
+}
+
+.nav-links a:hover { color: var(--rust); }
+
+.bmc-btn {
+  font-size: 0.78rem;
+  padding: 0.3rem 0.8rem;
+  background: var(--ink);
+  color: var(--parchment) !important;
+  text-decoration: none !important;
+  border-radius: 3px;
+  letter-spacing: 0.04em;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.bmc-btn:hover { background: var(--rust) !important; color: var(--parchment) !important; }
+
+/* ─── Masonry Grid ──────────────────────────────────────────────────────────── */
+.masonry-grid {
+  columns: 3;
+  column-gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.story-card {
+  break-inside: avoid;
+  background: var(--card-bg);
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--rule);
+  padding: 1rem 1.1rem 1.2rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  width: 100%;
+}
+
+/* ─── Badges ────────────────────────────────────────────────────────────────── */
+.badge {
+  display: inline-block;
+  font-size: 0.58rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.5rem;
+  margin-bottom: 0.5rem;
+  font-style: normal;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+.badge--historical {
+  background: var(--rust);
+  color: #fff;
+}
+
+.badge--current {
+  background: var(--green);
+  color: #fff;
+}
+
+.story-card--historical { border-top-color: var(--rust); }
+.story-card--current    { border-top-color: var(--green); }
+
+/* ─── Card Contents ─────────────────────────────────────────────────────────── */
+.map-pin {
+  font-size: 0.75rem;
+  margin-left: 0.4rem;
+  vertical-align: middle;
+}
+
+.card-headline {
+  font-size: 1.15rem;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.25;
+  margin: 0.25rem 0 0.3rem;
+}
+
+.card-headline a {
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.card-headline a:hover { color: var(--rust); }
+
+.card-date {
+  font-size: 0.72rem;
+  color: var(--muted);
+  font-style: italic;
+  margin-bottom: 0.55rem;
+}
+
+.card-excerpt {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+}
+
+.card-readmore {
+  font-size: 0.78rem;
+  font-style: italic;
+  color: var(--rust);
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+
+.card-readmore:hover { text-decoration: underline; color: var(--rust); }
+
+/* ─── Section Header ────────────────────────────────────────────────────────── */
+.section-header {
+  border-bottom: 2px solid var(--rule);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.section-title {
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* ─── Single Post ───────────────────────────────────────────────────────────── */
+.single-post {
+  max-width: 720px;
+  margin: 0 auto 3rem;
+}
+
+.single-header { margin-bottom: 1rem; }
+
+.single-headline {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-style: italic;
+  line-height: 1.2;
+  margin: 0.4rem 0 0.3rem;
+}
+
+.single-date {
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.post-rule {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 1rem 0;
+}
+
+.single-body {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.single-body p { margin-bottom: 1.1em; }
+
+.single-body h2, .single-body h3 {
+  font-style: italic;
+  margin: 1.5em 0 0.5em;
+}
+
+.single-body blockquote {
+  border-left: 3px solid var(--rule);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+  margin: 1em 0;
+}
+
+/* ─── Post Nav ──────────────────────────────────────────────────────────────── */
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.82rem;
+  font-style: italic;
+  flex-wrap: wrap;
+}
+
+.post-nav a { text-decoration: none; color: var(--rust); }
+.post-nav a:hover { text-decoration: underline; }
+.post-nav__home { text-align: center; flex: 1; }
+
+/* ─── Comments ──────────────────────────────────────────────────────────────── */
+.comments {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+}
+
+.comments__heading {
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+/* ─── Footer ────────────────────────────────────────────────────────────────── */
+.site-footer {
+  border-top: 2px solid var(--rule);
+  padding: 1.5rem 0 2rem;
+  text-align: center;
+}
+
+.email-signup {
+  margin-bottom: 1.5rem;
+}
+
+.email-signup__heading {
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 0.6rem;
+}
+
+.email-signup__form {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.email-signup__form input[type="email"] {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--rule);
+  background: var(--card-bg);
+  color: var(--ink);
+  font-family: Georgia, serif;
+  font-size: 0.9rem;
+  min-width: 220px;
+}
+
+.email-signup__form button {
+  padding: 0.4rem 1rem;
+  background: var(--ink);
+  color: var(--parchment);
+  border: none;
+  font-family: Georgia, serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+}
+
+.email-signup__form button:hover { background: var(--rust); }
+
+.footer-copy {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-bottom: 0.3rem;
+}
+
+.footer-tagline {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+/* ─── Responsive ────────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .masonry-grid { columns: 2; }
+}
+
+@media (max-width: 580px) {
+  .masonry-grid { columns: 1; }
+
+  .utility-bar {
+    flex-direction: column;
+    gap: 2px;
+    font-size: 7px;
+  }
+
+  .mast-title { font-size: 3.2rem; }
+
+  .site-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .post-nav { flex-direction: column; }
+}

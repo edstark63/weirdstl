@@ -1,0 +1,34 @@
+{{ define "main" }}
+<article class="single-post">
+  <header class="single-header">
+    <span class="badge badge--{{ .Params.content_type | default "historical" }}">
+      {{ if eq (.Params.content_type | default "historical") "current" }}CURRENT{{ else }}HISTORICAL{{ end }}
+    </span>
+    {{ if .Params.map_pin }}
+    <span class="map-pin" title="St. Louis location">&#x1F4CC;</span>
+    {{ end }}
+    <h1 class="single-headline">{{ .Title }}</h1>
+    <p class="single-date">{{ .Date.Format "January 2, 2006" }}</p>
+  </header>
+
+  <hr class="post-rule">
+
+  <div class="single-body">
+    {{ .Content }}
+  </div>
+
+  <hr class="post-rule">
+
+  <nav class="post-nav">
+    {{ with .PrevInSection }}
+    <a class="post-nav__prev" href="{{ .RelPermalink }}">&lsaquo; {{ .Title }}</a>
+    {{ end }}
+    <a class="post-nav__home" href="{{ "/" | relURL }}">All Stories</a>
+    {{ with .NextInSection }}
+    <a class="post-nav__next" href="{{ .RelPermalink }}">{{ .Title }} &rsaquo;</a>
+    {{ end }}
+  </nav>
+
+  {{ partial "comments.html" . }}
+</article>
+{{ end }}

@@ -1,0 +1,9 @@
+name = "WeirdSTL"
+license = "MIT"
+licenselink = "https://opensource.org/licenses/MIT"
+description = "Aged-parchment newspaper theme for WeirdSTL.com"
+homepage = "https://weirdstl.com"
+min_version = "0.120.0"
+
+[author]
+  name = "edstark63"

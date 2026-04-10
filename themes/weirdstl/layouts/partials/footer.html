@@ -1,0 +1,15 @@
+<footer class="site-footer">
+  {{ if .Site.Params.email_enabled }}
+  <div class="email-signup">
+    <h3 class="email-signup__heading">Get the Strange in Your Inbox</h3>
+    <form class="email-signup__form" action="#" method="post">
+      <input type="email" name="email" placeholder="your@email.com" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+  {{ end }}
+  <div class="footer-inner">
+    <p class="footer-copy">&copy; {{ now.Year }} WeirdSTL &mdash; St. Louis, Missouri</p>
+    <p class="footer-tagline"><em>{{ .Site.Params.motto }}</em></p>
+  </div>
+</footer>

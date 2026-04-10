@@ -1,0 +1,10 @@
+{{ define "main" }}
+<div class="section-header">
+  <h2 class="section-title">{{ .Title }}</h2>
+</div>
+<div class="masonry-grid">
+  {{ range .Pages.ByDate.Reverse }}
+    {{ partial "card.html" . }}
+  {{ end }}
+</div>
+{{ end }}

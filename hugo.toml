@@ -1,0 +1,27 @@
+baseURL = "https://weirdstl.com/"
+languageCode = "en-us"
+title = "WeirdSTL"
+theme = "weirdstl"
+
+[params]
+  description = "St. Louis · Strange and Overlooked"
+  motto = "All the strangeness fit to print"
+  comments_enabled = false
+  email_enabled = false
+  buymeacoffee_url = "#"
+  giscus_repo = ""
+  giscus_repo_id = ""
+  giscus_category = ""
+  giscus_category_id = ""
+
+[params.analytics]
+  google_analytics_id = ""
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML"]
+  section = ["HTML", "RSS"]
