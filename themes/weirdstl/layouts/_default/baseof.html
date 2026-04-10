@@ -25,6 +25,13 @@
         }, 50);
       }
     }
+    function copyShareLink(btn) {
+      navigator.clipboard.writeText(btn.dataset.url).then(function() {
+        var orig = btn.textContent;
+        btn.textContent = 'Copied!';
+        setTimeout(function() { btn.textContent = orig; }, 1500);
+      });
+    }
     window.addEventListener('DOMContentLoaded', function() {
       if (typeof PagefindUI !== 'undefined') {
         new PagefindUI({ element: '#search', showImages: false, excerptLength: 20 });
