@@ -249,10 +249,26 @@ a:hover { color: var(--rust); }
   background: var(--card-bg);
   border: 1px solid var(--card-border);
   border-top: 3px solid var(--card-border);
-  padding: 1rem 1.1rem 1.2rem;
+  padding: 0;
   margin-bottom: 1.5rem;
   display: inline-block;
   width: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.card-image-link { display: block; }
+
+.card-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.card-body {
+  padding: 1rem 1.1rem 1.2rem;
 }
 
 /* ─── Badges ────────────────────────────────────────────────────────────────── */
@@ -339,6 +355,33 @@ a:hover { color: var(--rust); }
   font-style: italic;
   font-weight: bold;
 }
+
+/* ─── Post Image ────────────────────────────────────────────────────────────── */
+.post-image {
+  margin: 0 0 1.25rem;
+}
+
+.post-image img {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 0.4rem;
+}
+
+.post-image__credit {
+  font-size: 0.75rem;
+  color: #6B5744;
+  font-style: italic;
+  font-family: Georgia, serif;
+}
+
+.post-image__credit a {
+  color: #6B5744;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.post-image__credit a:hover { color: var(--rust); }
 
 /* ─── Single Post ───────────────────────────────────────────────────────────── */
 .single-post {

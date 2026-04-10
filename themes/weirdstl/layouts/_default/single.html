@@ -14,6 +14,17 @@
 
   <hr class="post-rule">
 
+  {{ if .Params.image }}
+  <figure class="post-image">
+    <img src="{{ .Params.image }}" alt="{{ .Title }}">
+    {{ if .Params.image_credit }}
+    <figcaption class="post-image__credit">
+      {{ if .Params.image_credit_url }}<a href="{{ .Params.image_credit_url }}" target="_blank" rel="noopener">{{ .Params.image_credit }}</a>{{ else }}{{ .Params.image_credit }}{{ end }}
+    </figcaption>
+    {{ end }}
+  </figure>
+  {{ end }}
+
   <div class="single-body">
     {{ .Content }}
   </div>

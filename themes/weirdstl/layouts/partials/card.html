@@ -1,13 +1,20 @@
 {{ $ctype := .Params.content_type | default .Type | default "historical" }}
 <article class="story-card story-card--{{ $ctype }}">
-  <span class="badge badge--{{ $ctype }}">
-    {{ if eq $ctype "current" }}CURRENT{{ else }}HISTORICAL{{ end }}
-  </span>
-  {{ if .Params.map_pin }}
-  <span class="map-pin" title="St. Louis location">&#x1F4CC;</span>
+  {{ if .Params.image }}
+  <a href="{{ .RelPermalink }}" class="card-image-link">
+    <img class="card-image" src="{{ .Params.image }}" alt="{{ .Title }}">
+  </a>
   {{ end }}
-  <h2 class="card-headline"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-  <p class="card-date">{{ .Date.Format "January 2, 2006" }}</p>
-  <p class="card-excerpt">{{ .Summary | plainify }}</p>
-  <a class="card-readmore" href="{{ .RelPermalink }}">Read more &#x203A;</a>
+  <div class="card-body">
+    <span class="badge badge--{{ $ctype }}">
+      {{ if eq $ctype "current" }}CURRENT{{ else }}HISTORICAL{{ end }}
+    </span>
+    {{ if .Params.map_pin }}
+    <span class="map-pin" title="St. Louis location">&#x1F4CC;</span>
+    {{ end }}
+    <h2 class="card-headline"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    <p class="card-date">{{ .Date.Format "January 2, 2006" }}</p>
+    <p class="card-excerpt">{{ .Summary | plainify }}</p>
+    <a class="card-readmore" href="{{ .RelPermalink }}">Read more &#x203A;</a>
+  </div>
 </article>
