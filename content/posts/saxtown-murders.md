@@ -1,3 +1,14 @@
+---
+title: "The Ax Murders of Saxtown"
+date: 2026-04-22
+type: "historical"
+map_pin: true
+map_location: "Saxtown, IL"
+further_reading:
+ - title: "The Ax Murders of Saxtown"
+   url: "https://www.stlpr.org/show/st-louis-on-the-air/2014-01-15/140-year-old-millstadt-murder-mystery-gets-new-life-in-the-ax-murders-of-saxtown"
+---
+
 # The Ax Murders of Saxtown: A Community Consumed by Suspicion
 
 In the mid-19th century, Saxtown, Illinois, was little more than a quiet, tight-knit hamlet of German immigrant farmers tucked just south of Millstadt. It was the kind of place where doors were left unlocked and neighbors were family. But in 1874, that world was irrevocably shattered by a crime so gruesome it gripped the American consciousness and birthed a mystery that refuses to rest.
