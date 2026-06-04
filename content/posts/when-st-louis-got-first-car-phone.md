@@ -1,5 +1,5 @@
 ---
-title: "Mobile Phones Got Their Start in St. Louis"
+title: "Before Your Pocket, Mobile Calls Began in a St. Louis Car"
 date: 2026-06-04
 type: "historical"
 map_pin: false
