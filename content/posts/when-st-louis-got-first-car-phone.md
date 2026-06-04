@@ -1,5 +1,5 @@
 ---
-title: "St. Louis: Where Mobile Phones First Rang"
+title: "Mobile Phones Got Their Start in St. Louis"
 date: 2026-06-04
 type: "historical"
 map_pin: false
