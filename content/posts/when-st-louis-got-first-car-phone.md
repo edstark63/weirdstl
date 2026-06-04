@@ -1,5 +1,5 @@
 ---
-title: "When St. Louis Got the First Car Phone, It Came with a Price Tag and Zero Privacy"
+title: "St. Louis: Where Mobile Phones First Rang"
 date: 2026-06-04
 type: "historical"
 map_pin: false
