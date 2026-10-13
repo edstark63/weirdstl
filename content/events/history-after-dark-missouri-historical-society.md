@@ -2,7 +2,18 @@
 title: "The Missouri Historical Society Is Opening Its Storerooms for the Creepy Stuff"
 description: "On Saturday, October 24, the Missouri Historical Society opens its Library & Research Center storerooms for History After Dark, a Halloween-season event."
 date: 2026-10-12
-type: "current"
+type: "event"
+expiryDate: 2026-10-25T12:00:00Z
+aliases:
+  - /posts/history-after-dark-missouri-historical-society/
+event_date: "2026-10-24"
+event_time: "6:00–8:30 p.m."
+event_venue: "Missouri Historical Society Library & Research Center"
+event_address: "225 S. Skinker Blvd, St. Louis, MO 63105"
+event_url: "https://mohistory.org/events/history-after-dark"
+event_url_label: "Missouri Historical Society event page"
+event_start: "2026-10-24T18:00:00-05:00"
+event_finish: "2026-10-24T20:30:00-05:00"
 map_pin: true
 map_location: "225 S. Skinker Blvd, St. Louis, MO 63105"
 map_lat: 38.64239

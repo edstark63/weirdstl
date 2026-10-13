@@ -2,7 +2,15 @@
 title: "A Bad Santa 5K Is Running Through Carondelet Park on December 20"
 description: "The Bad Santa 5K runs through Carondelet Park in south St. Louis on Sunday, December 20, 2026, with free beer and a winter coat drive."
 date: 2026-10-12
-type: "current"
+type: "event"
+expiryDate: 2026-12-21T12:00:00Z
+aliases:
+  - /posts/bad-santa-5k-carondelet-park/
+event_date: "2026-12-20"
+event_venue: "Carondelet Park"
+event_address: "3900 Holly Hills Blvd, St. Louis, MO 63116"
+event_url: "https://www.findtherun.com/race/126459/bad-santa-5k"
+event_url_label: "Bad Santa 5K listing"
 map_pin: true
 map_location: "3900 Holly Hills Blvd, St. Louis, MO 63116"
 map_lat: 38.56289

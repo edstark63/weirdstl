@@ -29,6 +29,12 @@
 {{- end }}
 {{- if and .IsPage (not .Date.IsZero) }}
 {{- $ld := dict "@context" "https://schema.org" "@type" "Article" "headline" .Title "description" $desc "datePublished" (.Date.Format "2006-01-02") "mainEntityOfPage" .Permalink "author" (dict "@type" "Organization" "name" .Site.Title) "publisher" (dict "@type" "Organization" "name" .Site.Title) -}}
+{{- if eq .Type "event" }}
+{{- $loc := dict "@type" "Place" "name" (.Params.event_venue | default "St. Louis area") -}}
+{{- with .Params.event_address }}{{ $loc = merge $loc (dict "address" .) }}{{ end -}}
+{{- $ld = dict "@context" "https://schema.org" "@type" "Event" "name" .Title "description" $desc "startDate" (.Params.event_start | default .Params.event_date) "eventStatus" "https://schema.org/EventScheduled" "eventAttendanceMode" "https://schema.org/OfflineEventAttendanceMode" "url" .Permalink "location" $loc -}}
+{{- with (.Params.event_finish | default .Params.event_end) }}{{ $ld = merge $ld (dict "endDate" .) }}{{ end -}}
+{{- end }}
 {{- if $image }}{{ $ld = merge $ld (dict "image" $image) }}{{ end -}}
 {{- with .Params.map_lat }}{{ $ld = merge $ld (dict "contentLocation" (dict "@type" "Place" "name" ($.Params.map_label | default $.Params.map_location | default "") "geo" (dict "@type" "GeoCoordinates" "latitude" . "longitude" $.Params.map_lon))) }}{{ end -}}
 <script type="application/ld+json">{{ $ld | jsonify | safeJS }}</script>
@@ -54,6 +60,6 @@
 {{- if .IsHome }}
 <script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" (slice (dict "@type" "WebSite" "name" .Site.Title "url" .Site.Home.Permalink "description" (.Site.Params.homeDescription | default .Site.Params.description)) (dict "@type" "Organization" "name" .Site.Title "url" .Site.Home.Permalink "logo" ("/images/og-default.jpg" | absURL))) | jsonify | safeJS }}</script>
 {{- end }}
-{{- if and .IsPage (not .Date.IsZero) (in (slice "historical" "current") .Type) }}
-<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" (slice (dict "@type" "ListItem" "position" 1 "name" "Home" "item" .Site.Home.Permalink) (dict "@type" "ListItem" "position" 2 "name" (cond (eq .Type "current") "Current" "Historical") "item" (printf "%s%s/" .Site.Home.Permalink .Type)) (dict "@type" "ListItem" "position" 3 "name" .Title "item" .Permalink)) | jsonify | safeJS }}</script>
+{{- if and .IsPage (not .Date.IsZero) (in (slice "historical" "current" "event") .Type) }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" (slice (dict "@type" "ListItem" "position" 1 "name" "Home" "item" .Site.Home.Permalink) (dict "@type" "ListItem" "position" 2 "name" (cond (eq .Type "current") "Current" (cond (eq .Type "event") "Events" "Historical")) "item" (printf "%s%s/" .Site.Home.Permalink (cond (eq .Type "event") "events" .Type))) (dict "@type" "ListItem" "position" 3 "name" .Title "item" .Permalink)) | jsonify | safeJS }}</script>
 {{- end }}

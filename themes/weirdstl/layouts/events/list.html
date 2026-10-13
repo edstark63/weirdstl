@@ -1,0 +1,44 @@
+{{ define "main" }}
+{{ $today := now.Format "2006-01-02" }}
+{{ $all := sort .Pages "Params.event_date" "asc" }}
+{{ $ongoing := slice }}
+{{ $upcoming := slice }}
+{{ range $all }}
+  {{ $end := .Params.event_end | default .Params.event_date }}
+  {{ if lt $end $today }}
+  {{ else if le .Params.event_date $today }}
+    {{ $ongoing = $ongoing | append . }}
+  {{ else }}
+    {{ $upcoming = $upcoming | append . }}
+  {{ end }}
+{{ end }}
+
+<div class="section-header">
+  <h2 class="section-title">{{ .Title }}</h2>
+</div>
+<p class="map-intro">Strange, haunted and historical things to do around St. Louis, in date order. Each event drops off this page the day after it ends.</p>
+
+{{ if $ongoing }}
+<h3 class="archive-year">Happening now</h3>
+<div class="event-list">
+  {{ range sort $ongoing "Params.event_end" "asc" }}{{ partial "event-item.html" (dict "p" . "ongoing" true) }}{{ end }}
+</div>
+{{ end }}
+
+{{ $cur := "" }}
+{{ range $upcoming }}
+  {{ $mo := (time.AsTime .Params.event_date).Format "January 2006" }}
+  {{ if ne $mo $cur }}
+    {{ if $cur }}</div>{{ end }}
+    <h3 class="archive-year">{{ $mo }}</h3>
+    <div class="event-list">
+    {{ $cur = $mo }}
+  {{ end }}
+  {{ partial "event-item.html" (dict "p" . "ongoing" false) }}
+{{ end }}
+{{ if $cur }}</div>{{ end }}
+
+{{ if and (not $ongoing) (not $upcoming) }}
+<p class="not-found__lede">No events are listed right now. Check back soon.</p>
+{{ end }}
+{{ end }}

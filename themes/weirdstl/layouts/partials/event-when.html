@@ -1,0 +1,17 @@
+{{- $p := . -}}
+{{- $out := "" -}}
+{{- if $p.Params.event_when -}}
+  {{- $out = $p.Params.event_when -}}
+{{- else -}}
+  {{- $s := time.AsTime $p.Params.event_date -}}
+  {{- $e := $s -}}
+  {{- with $p.Params.event_end }}{{ $e = time.AsTime . }}{{ end -}}
+  {{- if eq ($s.Format "2006-01-02") ($e.Format "2006-01-02") -}}
+    {{- $out = $s.Format "Monday, January 2, 2006" -}}
+  {{- else if eq ($s.Format "2006-01") ($e.Format "2006-01") -}}
+    {{- $out = printf "%s–%s, %s–%s, %s" ($s.Format "Monday") ($e.Format "Monday") ($s.Format "January 2") ($e.Format "2") ($s.Format "2006") -}}
+  {{- else -}}
+    {{- $out = printf "%s – %s" ($s.Format "January 2") ($e.Format "January 2, 2006") -}}
+  {{- end -}}
+{{- end -}}
+{{- return $out -}}

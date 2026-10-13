@@ -743,3 +743,28 @@ a:hover { color: var(--rust); }
 .footer-links { display: flex; gap: 1.25rem; justify-content: center; flex-wrap: wrap; margin-bottom: 0.75rem; font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; }
 .footer-links a { color: var(--muted); text-decoration: none; }
 .footer-links a:hover { color: var(--rust); }
+
+/* ─── Events ────────────────────────────────────────────────────────────────── */
+.badge--event { background: var(--rule); color: #1A1208; }
+[data-theme="light"] .badge--event { background: #1A1008; color: #F5F0E2; }
+
+.event-list { margin-bottom: 1rem; }
+.event-item { display: flex; gap: 1.1rem; padding: 1rem 0; border-bottom: 1px solid var(--card-border); }
+.event-item:last-child { border-bottom: 0; }
+.event-item__date { flex: 0 0 4.2rem; text-align: center; border: 1px solid var(--card-border); border-top: 3px solid var(--rust); background: var(--card-bg); padding: 0.35rem 0.2rem; align-self: flex-start; line-height: 1.1; }
+.event-item__dow, .event-item__mon { display: block; font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+.event-item__day { display: block; font-size: 1.6rem; font-weight: bold; }
+.event-item__title { font-size: 1.15rem; margin: 0 0 0.2rem; }
+.event-item__title a { color: var(--text); text-decoration: none; }
+.event-item__title a:hover { color: var(--rust); }
+.event-item__meta { font-size: 0.8rem; color: var(--muted); font-style: italic; margin: 0 0 0.4rem; }
+.event-item__desc { margin: 0; font-size: 0.95rem; }
+
+.event-details { border: 1px solid var(--card-border); border-left: 3px solid var(--rust); background: var(--card-bg); padding: 0.8rem 1rem; margin: 0 0 1.25rem; font-size: 0.92rem; }
+.event-details div { display: flex; gap: 1rem; padding: 0.15rem 0; }
+.event-details dt { flex: 0 0 4rem; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); padding-top: 0.2rem; }
+.event-details dd { margin: 0; }
+.event-details a { color: var(--text); }
+.event-details a:hover { color: var(--rust); }
+
+.map-dot--event { background: #C8A96E; }

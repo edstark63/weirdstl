@@ -5,7 +5,7 @@
     <div class="single-header__top">
       <div class="single-header__tags">
         <span class="badge badge--{{ $ctype }}">
-          {{ if eq $ctype "current" }}CURRENT{{ else }}HISTORICAL{{ end }}
+          {{ if eq $ctype "current" }}CURRENT{{ else if eq $ctype "event" }}EVENT{{ else }}HISTORICAL{{ end }}
         </span>
         {{ if .Params.map_pin }}
         <span class="map-pin" title="St. Louis location">&#x1F4CC;</span>
@@ -23,13 +23,22 @@
       </button>
     </div>
     <h1 class="single-headline">{{ .Title }}</h1>
-    <p class="single-date">{{ .Date.Format "January 2, 2006" }}</p>
+    {{ if ne .Type "event" }}<p class="single-date">{{ .Date.Format "January 2, 2006" }}</p>{{ end }}
     {{ with .Params.map_lat }}
     <p class="single-map">&#x1F4CD; <a href="https://www.google.com/maps/search/?api=1&amp;query={{ . }},{{ $.Params.map_lon }}" target="_blank" rel="noopener">{{ $.Params.map_label | default $.Params.map_location | default "View on map" }}</a>{{ if $.Params.map_approx }} <span class="single-map__approx">(approximate)</span>{{ end }} &middot; <a href="{{ "/map/" | relURL }}">See all stories on the map</a></p>
     {{ end }}
   </header>
 
   <hr class="post-rule">
+
+  {{ if eq .Type "event" }}
+  <dl class="event-details">
+    <div><dt>When</dt><dd>{{ partial "event-when.html" . }}{{ with .Params.event_time }}, {{ . }}{{ end }}</dd></div>
+    {{ with .Params.event_venue }}<div><dt>Where</dt><dd>{{ . }}{{ with $.Params.event_address }}, {{ . }}{{ end }}</dd></div>{{ end }}
+    {{ with .Params.event_price }}<div><dt>Cost</dt><dd>{{ . }}</dd></div>{{ end }}
+    {{ with .Params.event_url }}<div><dt>More</dt><dd><a href="{{ . }}" target="_blank" rel="noopener">{{ $.Params.event_url_label | default "Official page" }}</a></dd></div>{{ end }}
+  </dl>
+  {{ end }}
 
   {{ if .Params.image }}
   <figure class="post-image">
@@ -63,12 +72,16 @@
   <hr class="post-rule">
 
   <nav class="post-nav">
+    {{ if eq .Type "event" }}
+    <a class="post-nav__home" href="{{ "/events/" | relURL }}">&lsaquo; All Events</a>
+    {{ else }}
     {{ with .PrevInSection }}
     <a class="post-nav__prev" href="{{ .RelPermalink }}">&lsaquo; {{ .Title }}</a>
     {{ end }}
     <a class="post-nav__home" href="{{ "/" | relURL }}">All Stories</a>
     {{ with .NextInSection }}
     <a class="post-nav__next" href="{{ .RelPermalink }}">{{ .Title }} &rsaquo;</a>
+    {{ end }}
     {{ end }}
   </nav>
 

@@ -1,0 +1,18 @@
+{{- $p := .p -}}
+{{- $s := time.AsTime $p.Params.event_date -}}
+{{- $e := $s -}}
+{{- with $p.Params.event_end }}{{ $e = time.AsTime . }}{{ end -}}
+<article class="event-item">
+  <div class="event-item__date" aria-hidden="true">
+    {{ if .ongoing }}
+    <span class="event-item__dow">Thru</span><span class="event-item__day">{{ $e.Format "2" }}</span><span class="event-item__mon">{{ $e.Format "Jan" }}</span>
+    {{ else }}
+    <span class="event-item__dow">{{ $s.Format "Mon" }}</span><span class="event-item__day">{{ $s.Format "2" }}</span><span class="event-item__mon">{{ $s.Format "Jan" }}</span>
+    {{ end }}
+  </div>
+  <div class="event-item__body">
+    <h3 class="event-item__title"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h3>
+    <p class="event-item__meta">{{ partial "event-when.html" $p }}{{ with $p.Params.event_time }} &middot; {{ . }}{{ end }}{{ with $p.Params.event_venue }} &middot; {{ . }}{{ end }}{{ with $p.Params.event_price }} &middot; {{ . }}{{ end }}</p>
+    <p class="event-item__desc">{{ $p.Params.description }}</p>
+  </div>
+</article>

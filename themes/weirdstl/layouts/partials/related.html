@@ -9,7 +9,7 @@
   {{ $pool = where $pool "Permalink" "ne" .Permalink }}
   {{ $items = first 3 $pool.ByDate.Reverse }}
 {{ end }}
-{{ if $items }}
+{{ if and $items (ne .Type "event") }}
 <section class="related">
   <hr class="post-rule">
   <h2 class="dig-deeper__heading">More Strange Stories</h2>

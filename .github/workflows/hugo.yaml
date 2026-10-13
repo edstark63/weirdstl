@@ -7,6 +7,10 @@ on:
     branches:
       - main
 
+  # Rebuilds every morning (about 8:30 a.m. Central) so expired events drop off the site on their own
+  schedule:
+    - cron: "30 13 * * *"
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 

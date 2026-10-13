@@ -37,8 +37,8 @@ CL = {
     "south_city_names": ["posts/how-dogtown-got-its-name", "posts/chouteaus-pond", "posts/mullanphy-emigrant-home"],
     "now_news": ["posts/six-flags-mid-america-rebrand", "posts/one-vote-election-2026", "posts/2025-tornado-north-st-louis", "posts/monkeys-north-st-louis", "posts/benton-park-lake-sinkholes"],
 }
-# Expiring event posts: never recommended as a target.
-EX = {"posts/bad-santa-5k-carondelet-park", "posts/history-after-dark-missouri-historical-society"}
+# Event pages are skipped entirely above (they live in content/events and expire on their own).
+EX = set()
 
 docs, titles = {}, {}
 for f in sorted(glob.glob("content/*/*.md")):
@@ -50,6 +50,8 @@ for f in sorted(glob.glob("content/*/*.md")):
         continue
     fm, body = m.group(1), t[m.end():]
     p = f.replace("\\", "/").split("/")
+    if p[1] == "events":  # events expire and live in their own section
+        continue
     key = "%s/%s" % (p[1], p[2][:-3])
     mt = re.search(r"^title:\s*(.+)$", fm, re.M)
     if not mt:
