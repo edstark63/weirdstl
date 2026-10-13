@@ -3,6 +3,9 @@ title: "The St. Louis Tornado of 2025 Came for the Vacancies"
 date: 2026-03-12
 type: "current"
 map_pin: false
+image: "/images/posts/tornado-radar-2025.jpg"
+image_credit: "National Weather Service radar view of the May 16, 2025 St. Louis tornado. U.S. government work, public domain, via Wikimedia Commons"
+image_credit_url: "https://commons.wikimedia.org/wiki/File:Likely_strong_tornado_in_St_Louis_Missouri_16_May_2025.png"
 further_reading:
   - title: "St. Louis has long had a vacancy problem — but the tornado made it much worse — St. Louis Public Radio"
     url: "https://www.stlpr.org/government-politics-issues/2026-03-12/north-st-louis-tornado-vacant-homes"

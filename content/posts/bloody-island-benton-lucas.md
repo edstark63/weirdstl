@@ -3,6 +3,9 @@ title: "The Duel That Gave Bloody Island Its Name"
 date: 2026-04-10
 type: "historical"
 map_pin: false
+image: "/images/posts/benton-portrait.jpg"
+image_credit: "Senator Thomas Hart Benton, portrait by Matthew Harris Jouett, 1820s. Cleveland Museum of Art. Public domain, via Wikimedia Commons"
+image_credit_url: "https://commons.wikimedia.org/wiki/File:Matthew_Harris_Jouett_-_Senator_Thomas_Hart_Benton_-_1941.597_-_Cleveland_Museum_of_Art.tiff"
 further_reading:
   - title: "Duel at 'Bloody Island' | City of St. Louis"
     url: "https://dynamic.stlouis-mo.gov/history/eventdetail.cfm?Master_ID=347"

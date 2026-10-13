@@ -3,6 +3,9 @@ title: "The 1904 World's Fair and the X-Ray Future"
 date: 2026-04-10
 type: "historical"
 map_pin: false
+image: "/images/posts/palace-electricity-night-1904.jpg"
+image_credit: "Night view of the Palace of Electricity and the bridge over the lagoon, 1904 World’s Fair. Missouri Historical Society, via Wikimedia Commons"
+image_credit_url: "https://commons.wikimedia.org/wiki/File:Night_view_of_the_Palace_of_Electricity,_Palace_of_Machinery_and_Bridge_over_the_Lagoon_at_the_1904_World%27s_Fair.jpg"
 further_reading:
   - title: "X-rays, 'fax machines' and ice cream cones debut at 1904 World's Fair | WashU"
     url: "https://source.washu.edu/2004/04/xrays-fax-machines-and-ice-cream-cones-debut-at-1904-world-fair/"

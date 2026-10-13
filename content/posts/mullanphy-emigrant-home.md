@@ -3,6 +3,9 @@ title: "Mullanphy Emigrant Home, or How St. Louis Once Tried to Welcome Stranger
 date: 2026-04-10
 type: "historical"
 map_pin: false
+image: "/images/posts/mullanphy-emigrant-home.jpg"
+image_credit: "Mullanphy Emigrant Home, 1609 North Fourteenth Street. Emil Boehl (1839–1919). Missouri Historical Society, via Wikimedia Commons"
+image_credit_url: "https://commons.wikimedia.org/wiki/File:Mullanphy_Emigrant_Home._1609_North_Fourteenth_Street_at_Howard_Street._-_DPLA_-_eacadddc320b28bda3d84da93a1a0a41.jpg"
 further_reading:
   - title: "Mullanphy Emigrant Home | City of St. Louis"
     url: "https://dynamic.stlouis-mo.gov/history/structdetail.cfm?Master_ID=1438"

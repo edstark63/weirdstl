@@ -4,6 +4,9 @@ date: 2026-05-01
 type: "historical"
 map_pin: true
 map_location: "10501 Gravois Rd, St. Louis, MO 63123"
+image: "/images/posts/grants-cabin-1912.jpg"
+image_credit: "Grant’s log cabin on the Busch farm, photographed by Oscar Kuehn, 1912. Missouri Historical Society, via Wikimedia Commons"
+image_credit_url: "https://commons.wikimedia.org/wiki/File:Grant%27s_Log_Cabin_on_Busch_Farm,_St._Louis_Ave.,_St._Louis.jpg"
 further_reading:
  - title: "Grant's Farm History"
    url: "https://en.wikipedia.org/wiki/Grant%27s_Farm"

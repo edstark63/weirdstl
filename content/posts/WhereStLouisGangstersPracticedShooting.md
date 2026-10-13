@@ -4,6 +4,9 @@ date: 2026-04-19
 type: "historical"
 map_pin: true
 map_location: "7401 St. Charles Rock Road, St. Louis, MO 63133"
+image: "/images/posts/maxwelton-colbeck.jpg"
+image_credit: "William “Dinty” Colbeck, St. Louis Police lantern slide, undated. Missouri Historical Society, via Wikimedia Commons (no restrictions)"
+image_credit_url: "https://commons.wikimedia.org/wiki/File:St._Louis_Police_Lantern_Slides-_Mug_shot_of_gangster_William_%22Dinty%22_Colbeck._-_DPLA_-_5410ea8dbae3ddeb55a68f6644550f9e.jpg"
 further_reading:
   - title: "Photo Friday: Maxwelton Race Track | St. Louis Magazine"
     url: "https://www.stlmag.com/culture/Photo-Friday-Maxwelton-Race-Track/"

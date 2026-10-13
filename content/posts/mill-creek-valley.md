@@ -3,6 +3,9 @@ title: "The Neighborhood the City Erased"
 date: 2026-04-10
 type: "historical"
 map_pin: false
+image: "/images/posts/mill-creek-aerial-1917.jpg"
+image_credit: "Aerial view of St. Louis including Mill Creek Valley, 1917, before the clearance. Missouri Historical Society, via Wikimedia Commons"
+image_credit_url: "https://commons.wikimedia.org/wiki/File:Aerial_view_showing_a_view_of_St._Louis_including_Mill_Creek_Valley,_with_the_Mississippi_River_running_along_the_bottom,_before_clearing_for_the_Jefferson_Nation_Expansion_Memorial_-_DPLA_-_54608d4c9f752018be46a0e589869669.jpg"
 further_reading:
   - title: "Remembering Mill Creek Valley — St. Louis Public Radio"
     url: "https://www.stlpr.org/show/st-louis-on-the-air/2018-03-01/remembering-mill-creek-valley-once-home-to-20-000-black-st-louisans"
