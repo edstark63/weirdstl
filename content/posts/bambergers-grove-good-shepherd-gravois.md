@@ -17,7 +17,7 @@ further_reading:
     url: "https://theclio.com/entry/149142"
 ---
 
-By 1865, a German immigrant named Phillip Bamberger was running a picnic ground and wine garden on Gravois Road, at what is now Gravois and Bamberger avenues in Tower Grove South. It lasted a couple of decades. After that, Adolphus Busch bought the land and gave it to a Catholic order of nuns, who ran a home there for girls and women until 1969. Today the site is a parking lot at the old Shop 'n Save strip mall.
+By 1865, a German immigrant named Phillip Bamberger was running a picnic ground and wine garden on Gravois Road, at what is now Gravois and Bamberger avenues in Tower Grove South. It lasted a couple of decades. After that, Adolphus Busch bought the land and gave it to a Catholic order of nuns, who ran a home there for girls and women until 1969. Today the site is the parking lot of Gravois Plaza, a strip mall with an Aldi, which is not what Busch had in mind.
 
 <!--more-->
 
@@ -32,5 +32,3 @@ The records that survive are mostly about institutions, so the individual storie
 By 1969 the buildings needed repairs, and the Sisters had decided to move to North County. They sold the property. About 120 nuns and girls were living there at the time, and twenty-nine sisters and about 45 girls aged 13 to 17 moved to a home on Mullanphy Road. The Missouri Historical Society has a photo of the convent being demolished on September 8, 1969, and by September 10 the Post-Dispatch reported that most of it was gone. A $4 million shopping and office complex was announced. The shopping part got built, and the office part never did.
 
 Gustine Avenue was rerouted for the project, which took some houses with it. The rubble from the convent went into the fill behind a retaining wall along the new curve. If you drive Gustine today, the road still bends around the parking lot, held up in part by the building it replaced.
-
-*Note: Sources differ on what stands there now. Some say a strip mall, and one says a fast-food restaurant. Check the corner before you plan a visit.*
