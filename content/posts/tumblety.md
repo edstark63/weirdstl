@@ -3,6 +3,9 @@ title: "The St. Louis Quack Who Ended Up on the Jack the Ripper Suspect List"
 date: 2026-04-10
 type: "historical"
 map_pin: false
+image: "/images/posts/tumblety-nyt-1888.jpg"
+image_credit: "“Something About Dr. Tumblety,” The New York Times, November 23, 1888. Public domain, via Wikimedia Commons"
+image_credit_url: "https://commons.wikimedia.org/wiki/File:Francis_Tumblety_in_The_New_York_Times_(November_1888).jpg"
 further_reading:
   - title: "Francis Tumblety"
     url: "https://en.wikipedia.org/wiki/Francis_Tumblety"

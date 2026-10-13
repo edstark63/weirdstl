@@ -3,6 +3,9 @@ title: "The Night the River Set St. Louis on Fire"
 date: 2026-04-10
 type: "historical"
 map_pin: false
+image: "/images/posts/1849-fire-lithograph.jpg"
+image_credit: "“Great Fire at St. Louis, Mo.” Currier & Ives lithograph, c. 1849. Library of Congress, no known restrictions on publication"
+image_credit_url: "https://www.loc.gov/pictures/item/2001704273/"
 further_reading:
   - title: "Fire Department History | City of St. Louis"
     url: "https://www.stlouis-mo.gov/government/departments/public-safety/fire/fire-department-history.cfm"

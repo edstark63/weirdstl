@@ -3,6 +3,9 @@ title: "The Night St. Louis Almost Burned to the River"
 date: 2026-04-06
 type: "historical"
 map_pin: false
+image: "/images/posts/1849-fire-lithograph.jpg"
+image_credit: "“Great Fire at St. Louis, Mo.” Currier & Ives lithograph, c. 1849. Library of Congress, no known restrictions on publication"
+image_credit_url: "https://www.loc.gov/pictures/item/2001704273/"
 further_reading:
   - title: "The Great Fire of 1849 — Missouri History Museum"
     url: "https://mohistory.org/"

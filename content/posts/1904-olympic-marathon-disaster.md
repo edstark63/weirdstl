@@ -3,6 +3,9 @@ title: "The 1904 Olympic Marathon Was a 26-Mile Medical Emergency"
 date: 2026-06-04
 type: "historical"
 map_pin: false
+image: "/images/posts/1904-marathon-hicks.jpg"
+image_credit: "Thomas Hicks after winning the 1904 Olympic marathon. Photo: Jessie Tarbox Beals, 1904. Public domain, via Wikimedia Commons"
+image_credit_url: "https://commons.wikimedia.org/wiki/File:1904_Olympics-_Thomas_J._Hicks,_Boston,_winner_of_the_Marathon_Race_resting_in_a_car_after_the_finish.jpg"
 further_reading:
  - title: "The 1904 Olympic Marathon May Have Been the Strangest Ever - Smithsonian Magazine"
    url: "https://www.smithsonianmag.com/history/how-the-1904-marathon-became-one-of-the-weirdest-olympic-events-of-all-time-14910747/"

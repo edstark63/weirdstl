@@ -5,6 +5,9 @@ content_type: "historical"
 map_pin: false
 tags: ["1904 world's fair", "food history", "forest park", "disputed"]
 summary: "The 1904 Louisiana Purchase Exposition gave the world the hot dog bun, iced tea, and — depending on which of seven claimants you believe — the ice cream cone. The truth is stranger and more contested than the official story."
+image: "/images/posts/worlds-fair-ice-cream-cones.jpg"
+image_credit: "Children eating ice cream cones at the 1904 World’s Fair. Photographer unknown, 1904. Public domain, via Wikimedia Commons"
+image_credit_url: "https://commons.wikimedia.org/wiki/File:Randolph_Smith_Lyon,_Mildred_Frances_Lyon,_Mrs._Montague_Lyon_(Frances_Robnett_Smith_Lyon),_Montague_Lyon,_Jr.,_eating_ice_cream_cones_at_the_1904_World%27s_Fair.jpg"
 ---
 
 Every St. Louis schoolchild learns the story: Ernest Hamwi, a Syrian waffle vendor at the 1904 World's Fair, noticed that the ice cream vendor next to him had run out of dishes. Hamwi rolled one of his *zalabia* waffles into a cone shape and handed it to his neighbor as a substitute. The ice cream cone was born. St. Louis did it again.

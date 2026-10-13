@@ -4,6 +4,9 @@ date: 2026-04-10
 type: "current"
 map_pin: true
 map_location: "11 N 4th St, St. Louis, MO 63102"
+image: "/images/posts/old-courthouse-1854.jpg"
+image_credit: "The St. Louis courthouse under construction, drawing by Gustav Baumgarten, 1854. Public domain, via Wikimedia Commons"
+image_credit_url: "https://commons.wikimedia.org/wiki/File:Print_%22St._Louis_County_Courthouse%22_by_Gustav_Baumgarten.jpg"
 further_reading:
   - title: "Old Courthouse Renovation | National Park Service"
     url: "https://www.nps.gov/jeff/planyourvisit/old-courthouse-renovation.htm"

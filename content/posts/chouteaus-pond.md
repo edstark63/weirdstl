@@ -3,6 +3,9 @@ title: "Chouteau's Pond, the Lake St. Louis Turned Into an Open Sewer"
 date: 2026-04-10
 type: "historical"
 map_pin: false
+image: "/images/posts/chouteaus-pond-map.jpg"
+image_credit: "Chouteau’s Pond on a city map, 1856. Public domain, via Wikimedia Commons"
+image_credit_url: "https://commons.wikimedia.org/wiki/File:1856_Chouteau_Pond_St._Louis.jpg"
 further_reading:
   - title: "Chouteau's Pond is created | City of St. Louis"
     url: "https://dynamic.stlouis-mo.gov/history/eventdetail.cfm?Master_ID=406"
