@@ -4,6 +4,9 @@ date: 2026-10-12
 type: "current"
 map_pin: true
 map_location: "3900 Holly Hills Blvd, St. Louis, MO 63116"
+map_lat: 38.56289
+map_lon: -90.26577
+map_label: "Carondelet Park, St. Louis"
 further_reading:
   - title: "Bad Santa 5K — Find The Run"
     url: "https://www.findtherun.com/race/126459/bad-santa-5k"

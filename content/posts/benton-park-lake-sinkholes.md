@@ -2,7 +2,10 @@
 title: "The Lake in Benton Park Is Leaking Into the Underworld"
 date: 2026-04-10
 type: "current"
-map_pin: false
+map_pin: true
+map_lat: 38.5973
+map_lon: -90.22264
+map_label: "Benton Park, St. Louis"
 further_reading:
   - title: "MDC announces fish salvage order now in effect at Benton Park Lake in St. Louis City | Missouri Department of Conservation"
     url: "https://mdc.mo.gov/newsroom/mdc-announces-fish-salvage-order-now-effect-benton-park-lake-st-louis-city"

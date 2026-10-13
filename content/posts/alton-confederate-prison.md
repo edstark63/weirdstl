@@ -2,7 +2,10 @@
 title: "Alton's Confederate Prison Lost 1,500 Men and Kept One Wall"
 date: 2026-10-12
 type: "historical"
-map_pin: false
+map_pin: true
+map_lat: 38.89167
+map_lon: -90.19056
+map_label: "Site of the Alton Military Prison, Alton, Illinois (one wall remains)"
 further_reading:
   - title: "Alton Military Prison — Wikipedia"
     url: "https://en.wikipedia.org/wiki/Alton_Military_Prison"

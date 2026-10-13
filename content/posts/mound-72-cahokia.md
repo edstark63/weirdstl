@@ -4,6 +4,9 @@ date: 2026-10-12
 type: "historical"
 map_pin: true
 map_location: "Cahokia Mounds State Historic Site, 30 Ramey Street, Collinsville, IL 62234"
+map_lat: 38.650917
+map_lon: -90.063611
+map_label: "Mound 72, Cahokia Mounds State Historic Site, Collinsville, Illinois"
 image: "/images/posts/mound-72-cahokia.jpg"
 image_credit: "Mound 72 at Cahokia Mounds State Historic Site. Photo: HeldonR, 2024. CC0, via Wikimedia Commons"
 image_credit_url: "https://commons.wikimedia.org/wiki/File:Mound_72_-_Cahokia.jpg"

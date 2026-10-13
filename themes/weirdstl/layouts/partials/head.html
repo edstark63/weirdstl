@@ -9,14 +9,14 @@
 <link rel="canonical" href="{{ .Permalink }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
 <meta property="og:locale" content="en_US">
-<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:type" content="{{ if and .IsPage (not .Date.IsZero) }}article{{ else }}website{{ end }}">
 <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
 <meta property="og:description" content="{{ $desc }}">
 <meta property="og:url" content="{{ .Permalink }}">
 {{- if $image }}
 <meta property="og:image" content="{{ $image }}">
 {{- end }}
-{{- if .IsPage }}
+{{- if and .IsPage (not .Date.IsZero) }}
 <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
 {{- end }}
 <meta name="twitter:card" content="{{ if $image }}summary_large_image{{ else }}summary{{ end }}">
@@ -25,9 +25,10 @@
 {{- if $image }}
 <meta name="twitter:image" content="{{ $image }}">
 {{- end }}
-{{- if .IsPage }}
+{{- if and .IsPage (not .Date.IsZero) }}
 {{- $ld := dict "@context" "https://schema.org" "@type" "Article" "headline" .Title "description" $desc "datePublished" (.Date.Format "2006-01-02") "mainEntityOfPage" .Permalink "author" (dict "@type" "Organization" "name" .Site.Title) "publisher" (dict "@type" "Organization" "name" .Site.Title) -}}
 {{- if $image }}{{ $ld = merge $ld (dict "image" $image) }}{{ end -}}
+{{- with .Params.map_lat }}{{ $ld = merge $ld (dict "contentLocation" (dict "@type" "Place" "name" ($.Params.map_label | default $.Params.map_location | default "") "geo" (dict "@type" "GeoCoordinates" "latitude" . "longitude" $.Params.map_lon))) }}{{ end -}}
 <script type="application/ld+json">{{ $ld | jsonify | safeJS }}</script>
 {{- end }}
 <link rel="stylesheet" href="{{ "/css/main.css" | relURL }}">

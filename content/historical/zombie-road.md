@@ -3,6 +3,10 @@ title: "Zombie Road: The Most Haunted Two Miles in Missouri"
 date: 2024-12-01
 content_type: "historical"
 map_pin: true
+map_lat: 38.54889
+map_lon: -90.60718
+map_label: "Zombie Road (Lawler Ford Road), Wildwood, Missouri"
+map_approx: true
 tags: ["zombie road", "wildwood", "trails", "haunted"]
 summary: "It was never officially called Zombie Road. The name just spread, the way dread spreads, and eventually became the only name anyone used for the two-mile stretch of crumbling asphalt winding through the Meramec River bluffs west of the city."
 ---

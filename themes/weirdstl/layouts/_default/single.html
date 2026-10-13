@@ -24,6 +24,9 @@
     </div>
     <h1 class="single-headline">{{ .Title }}</h1>
     <p class="single-date">{{ .Date.Format "January 2, 2006" }}</p>
+    {{ with .Params.map_lat }}
+    <p class="single-map">&#x1F4CD; <a href="https://www.google.com/maps/search/?api=1&amp;query={{ . }},{{ $.Params.map_lon }}" target="_blank" rel="noopener">{{ $.Params.map_label | default $.Params.map_location | default "View on map" }}</a>{{ if $.Params.map_approx }} <span class="single-map__approx">(approximate)</span>{{ end }} &middot; <a href="{{ "/map/" | relURL }}">See all stories on the map</a></p>
+    {{ end }}
   </header>
 
   <hr class="post-rule">

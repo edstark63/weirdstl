@@ -4,6 +4,8 @@ date: 2026-04-10
 type: "current"
 map_pin: true
 map_location: "4947 W Florissant Ave, St. Louis, MO 63115"
+map_lat: 38.6907
+map_lon: -90.23573
 image: "/images/posts/wainwright-tomb-1942.jpg"
 image_credit: "Wainwright Tomb, Bellefontaine Cemetery, 1942. Historic American Buildings Survey, Library of Congress"
 image_credit_url: "https://www.loc.gov/pictures/item/mo0668.photos.099661p/"

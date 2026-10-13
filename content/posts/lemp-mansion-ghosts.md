@@ -4,6 +4,8 @@ date: 2026-10-12
 type: "historical"
 map_pin: true
 map_location: "3322 DeMenil Place, St. Louis, MO 63118"
+map_lat: 38.59317
+map_lon: -90.21581
 image: "/images/posts/lemp-brewery-1883.jpg"
 image_credit: "Advertisement for Wm. J. Lemp’s Western Brewery, 1883. Missouri Historical Society, via Wikimedia Commons"
 image_credit_url: "https://commons.wikimedia.org/wiki/File:Wm._J._Lemp%27s_Western_Brewery._Cherokee_Street_and_Second_Carondelet_Avenue.jpg"

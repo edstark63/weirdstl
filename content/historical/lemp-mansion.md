@@ -3,6 +3,9 @@ title: "The House That Sorrow Built: Lemp Mansion and the Family That Couldn't S
 date: 2024-11-10
 content_type: "historical"
 map_pin: true
+map_lat: 38.59317
+map_lon: -90.21581
+map_label: "Lemp Mansion, 3322 DeMenil Place, St. Louis"
 tags: ["lemp", "haunted", "south city", "beer barons"]
 summary: "Four suicides in forty-five years. A fortune dissolved overnight. A brewery sealed shut like a tomb. The Lemp family story is St. Louis's most operatic tragedy, and the mansion at 3322 DeMenil Place still carries every note of it."
 ---

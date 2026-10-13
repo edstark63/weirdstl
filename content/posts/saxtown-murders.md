@@ -4,6 +4,10 @@ date: 2026-04-22
 type: "historical"
 map_pin: true
 map_location: "Saxtown, IL"
+map_lat: 38.43439
+map_lon: -90.09621
+map_label: "Saxtown Road area, south of Millstadt, Illinois"
+map_approx: true
 further_reading:
  - title: "The Ax Murders of Saxtown"
    url: "https://www.stlpr.org/show/st-louis-on-the-air/2014-01-15/140-year-old-millstadt-murder-mystery-gets-new-life-in-the-ax-murders-of-saxtown"

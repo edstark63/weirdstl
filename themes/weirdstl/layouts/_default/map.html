@@ -1,0 +1,105 @@
+{{ define "head_extra" }}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+{{ end }}
+
+{{ define "main" }}
+{{ $pts := slice }}
+{{ range site.RegularPages }}
+  {{ if .Params.map_lat }}
+    {{ $pts = $pts | append (dict
+      "title" .Title
+      "url" .RelPermalink
+      "lat" .Params.map_lat
+      "lon" .Params.map_lon
+      "type" (.Params.content_type | default .Type | default "historical")
+      "place" (.Params.map_label | default .Params.map_location | default "")
+      "approx" (.Params.map_approx | default false)
+      "date" (.Date.Format "January 2, 2006")) }}
+  {{ end }}
+{{ end }}
+
+<div class="section-header">
+  <h2 class="section-title">{{ .Title }}</h2>
+</div>
+
+<p class="map-intro">Every story with a place attached. Click a marker to read it. Pins marked approximate show the general area, not an exact spot.</p>
+<div class="map-legend">
+  <span><i class="map-dot map-dot--historical"></i> Historical</span>
+  <span><i class="map-dot map-dot--current"></i> Current</span>
+</div>
+
+<div id="story-map" role="region" aria-label="Map of WeirdSTL stories"></div>
+
+<h3 class="section-title" style="font-size:1.1rem;margin-bottom:0.75rem;">All mapped stories</h3>
+<ul class="map-list">
+  {{ range sort $pts "title" }}
+  {{ $p := . }}
+  <li><a href="{{ $p.url }}">{{ $p.title }}</a>{{ with $p.place }}<span class="map-list__place">{{ . }}{{ if $p.approx }} (approximate){{ end }}</span>{{ end }}</li>
+  {{ end }}
+</ul>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+(function () {
+  if (typeof L === 'undefined') return;
+  var pts = {{ $pts | jsonify | safeJS }};
+  var map = L.map('story-map', { scrollWheelZoom: false });
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  var groups = {};
+  pts.forEach(function (p) {
+    var key = p.lat + ',' + p.lon;
+    (groups[key] = groups[key] || []).push(p);
+  });
+
+  var bounds = [];
+  Object.keys(groups).forEach(function (key) {
+    var items = groups[key];
+    var first = items[0];
+    var icon = L.divIcon({
+      className: '',
+      html: '<span class="map-dot map-dot--' + first.type + '"></span>',
+      iconSize: [18, 18],
+      iconAnchor: [9, 9],
+      popupAnchor: [0, -10]
+    });
+    var marker = L.marker([first.lat, first.lon], {
+      icon: icon,
+      title: items.map(function (i) { return i.title; }).join(' / '),
+      alt: first.title
+    }).addTo(map);
+
+    var box = document.createElement('div');
+    items.forEach(function (p) {
+      var item = document.createElement('div');
+      item.className = 'map-popup__item';
+      var a = document.createElement('a');
+      a.className = 'map-popup__title';
+      a.href = p.url;
+      a.textContent = p.title;
+      item.appendChild(a);
+      if (p.place) {
+        var place = document.createElement('span');
+        place.className = 'map-popup__place';
+        place.textContent = p.place + (p.approx ? ' (approximate)' : '');
+        item.appendChild(place);
+      }
+      box.appendChild(item);
+    });
+    marker.bindPopup(box);
+    bounds.push([first.lat, first.lon]);
+  });
+
+  if (bounds.length) {
+    map.fitBounds(bounds, { padding: [30, 30], maxZoom: 12 });
+  } else {
+    map.setView([38.63, -90.2], 10);
+  }
+  document.getElementById('story-map').addEventListener('focus', function () { map.scrollWheelZoom.enable(); });
+  document.getElementById('story-map').addEventListener('blur', function () { map.scrollWheelZoom.disable(); });
+})();
+</script>
+{{ end }}

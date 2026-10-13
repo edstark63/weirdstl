@@ -4,6 +4,8 @@ date: 2026-10-12
 type: "current"
 map_pin: true
 map_location: "225 S. Skinker Blvd, St. Louis, MO 63105"
+map_lat: 38.64239
+map_lon: -90.30301
 further_reading:
   - title: "Young Friends History After Dark — St. Louis Public Radio community calendar"
     url: "https://www.stlpr.org/community-calendar/event/young-friends-history-after-dark-21-09-2026-17-05-26"

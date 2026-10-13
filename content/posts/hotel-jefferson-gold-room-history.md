@@ -6,6 +6,8 @@ aliases:
   - /posts/jefferson-hotel-reopening/
 map_pin: true
 map_location: "Jefferson Arms Building, 415 N Tucker Blvd, St. Louis, MO 63101"
+map_lat: 38.63103
+map_lon: -90.19766
 further_reading:
   - title: "Downtown St. Louis Has a Secret Ballroom — Preservation Research Office"
     url: "http://preservationresearch.com/abandonment/downtown-st-louis-has-a-secret-ballroom/"

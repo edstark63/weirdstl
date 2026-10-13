@@ -2,7 +2,7 @@
 title: "Bubblehead Road Is Real, It's in St. Charles County, and Nobody Fully Agrees on Why"
 date: 2025-03-05
 content_type: "current"
-map_pin: true
+map_pin: false
 tags: ["st. charles county", "roads", "urban legend", "driving"]
 summary: "Streetlight Road in St. Charles County has been called Bubblehead Road for at least forty years. The name appears on no official map. Local teenagers have been driving it at midnight looking for something indefinable since before any of them were born."
 ---

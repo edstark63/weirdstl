@@ -4,6 +4,8 @@ date: 2026-03-25
 type: "historical"
 map_pin: true
 map_location: "Hilton St. Louis at the Ballpark, 1 S Broadway, St. Louis, MO 63102"
+map_lat: 38.62515
+map_lon: -90.19112
 further_reading:
   - title: "What was the Spanish Pavilion? — St. Louis Magazine"
     url: "https://www.stlmag.com/history/st-louis-sage/what-was-the-spanish-pavilion/"

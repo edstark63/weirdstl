@@ -4,6 +4,8 @@ date: 2026-04-10
 type: "historical"
 map_pin: true
 map_location: "2323 Lafayette Ave, St. Louis, MO 63104"
+map_lat: 38.61502
+map_lon: -90.21958
 further_reading:
   - title: "The Story of a Long-Forgotten St. Louis Psychic Recovered—From the Trash | St. Louis Magazine"
     url: "https://www.stlmag.com/culture/Literature/the-story-of-a-long-forgotten-st-louis-psychic-recovered%E2%80%94from-the-trash/"

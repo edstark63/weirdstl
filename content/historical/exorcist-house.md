@@ -3,6 +3,9 @@ title: "The House on Roanoke Drive: Where The Exorcist Actually Started"
 date: 2025-01-20
 content_type: "historical"
 map_pin: true
+map_lat: 38.58336
+map_lon: -90.22882
+map_label: "Site of the former Alexian Brothers Hospital, 3933 S. Broadway, St. Louis"
 tags: ["exorcist", "bel-nor", "catholic", "1949", "film history"]
 summary: "William Peter Blatty didn't invent the possession story that became The Exorcist. He read about it in a Washington Post article in 1949, and the real events happened not in Georgetown but in a modest ranch house in the St. Louis suburb of Bel-Nor."
 ---
