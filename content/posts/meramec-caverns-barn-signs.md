@@ -4,6 +4,9 @@ description: "Before there were billboards, there were barns. The story of the m
 date: 2026-04-05
 type: "historical"
 map_pin: false
+image: "/images/posts/meramec-caverns-barn.jpg"
+image_credit: "Meramec Caverns barn advertisement, Clyde, Ohio, 1980. John Margolies, Library of Congress (no known restrictions)"
+image_credit_url: "https://commons.wikimedia.org/wiki/File:Barn_billboard,_for_Jesse_James_Hideout.jpg"
 further_reading:
   - title: "Meramec Caverns History — americascave.com"
     url: "https://www.americascave.com/history/"

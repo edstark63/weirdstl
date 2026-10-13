@@ -7,9 +7,9 @@ map_pin: true
 map_location: "11 N 4th St, St. Louis, MO 63102"
 map_lat: 38.62573
 map_lon: -90.18935
-image: "/images/posts/old-courthouse-1854.jpg"
-image_credit: "The St. Louis courthouse under construction, drawing by Gustav Baumgarten, 1854. Public domain, via Wikimedia Commons"
-image_credit_url: "https://commons.wikimedia.org/wiki/File:Print_%22St._Louis_County_Courthouse%22_by_Gustav_Baumgarten.jpg"
+image: "/images/posts/dred-scott-schultze.jpg"
+image_credit: "Dred Scott, oil on canvas by Louis Schultze, 1888, painted three decades after Scott’s death. Missouri Historical Society, via Wikimedia Commons (public domain)"
+image_credit_url: "https://commons.wikimedia.org/wiki/File:DredScott.jpg"
 further_reading:
   - title: "The Slave Trade in St. Louis | National Park Service"
     url: "https://www.nps.gov/articles/000/the-slave-trade-in-st-louis.htm"
