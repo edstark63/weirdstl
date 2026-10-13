@@ -3,6 +3,7 @@ title: "Halloween Trivia at the Lemp Mansion"
 description: "The Lemp Mansion hosts a Halloween trivia competition on Sunday, October 18, with an overnight stay as the prize."
 date: 2026-10-12
 type: "event"
+featured: true
 expiryDate: 2026-10-19T12:00:00Z
 event_date: "2026-10-18"
 event_venue: "Lemp Mansion"

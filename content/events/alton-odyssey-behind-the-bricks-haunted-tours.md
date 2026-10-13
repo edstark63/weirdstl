@@ -3,6 +3,7 @@ title: "Alton Odyssey: Behind the Bricks Haunted Tours"
 description: "Alton Odyssey’s $40 Behind the Bricks tour visits five haunted and historic Alton locations on Saturday nights, with a ghost-hunt demonstration."
 date: 2026-10-12
 type: "event"
+featured: true
 expiryDate: 2026-10-25T12:00:00Z
 event_date: "2026-10-17"
 event_end: "2026-10-24"

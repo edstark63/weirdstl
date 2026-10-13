@@ -13,8 +13,12 @@
     <span class="map-pin" title="St. Louis location">&#x1F4CC;</span>
     {{ end }}
     <h2 class="card-headline"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    {{ if eq $ctype "event" }}
+    <p class="card-date">{{ partial "event-when.html" . }}{{ with .Params.event_time }} &middot; {{ . }}{{ end }}</p>
+    {{ else }}
     <p class="card-date">{{ .Date.Format "January 2, 2006" }}</p>
+    {{ end }}
     <p class="card-excerpt">{{ .Summary | plainify }}</p>
-    <a class="card-readmore" href="{{ .RelPermalink }}">Read more &#x203A;</a>
+    <a class="card-readmore" href="{{ .RelPermalink }}">{{ if eq $ctype "event" }}Event details{{ else }}Read more{{ end }} &#x203A;</a>
   </div>
 </article>

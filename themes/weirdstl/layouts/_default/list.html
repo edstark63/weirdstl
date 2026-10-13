@@ -5,6 +5,9 @@
 {{ $pages := .Pages }}
 {{ if in (slice "historical" "current") .Section }}
   {{ $pages = where site.RegularPages "Type" .Section }}
+  {{ if eq .Section "current" }}
+    {{ $pages = $pages | union (where (where site.RegularPages "Type" "event") "Params.featured" true) }}
+  {{ end }}
 {{ end }}
 <div class="masonry-grid">
   {{ range $pages.ByDate.Reverse }}

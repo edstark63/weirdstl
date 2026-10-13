@@ -3,6 +3,7 @@ title: "New Mount Sinai Cemetery Tour"
 description: "Landmarks Association of St. Louis leads a $20 tour of New Mount Sinai Cemetery on Gravois Road on Monday, October 19, from noon to 1:30 p.m."
 date: 2026-10-12
 type: "event"
+featured: true
 expiryDate: 2026-10-20T12:00:00Z
 event_date: "2026-10-19"
 event_time: "12:00–1:30 p.m."
