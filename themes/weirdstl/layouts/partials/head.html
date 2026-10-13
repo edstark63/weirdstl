@@ -41,6 +41,10 @@
   gtag('config', '{{ .Site.Params.analytics.google_analytics_id }}');
 </script>
 {{ end }}
+{{ if and hugo.IsProduction .Site.Params.analytics.cloudflare_token }}
+<!-- Cloudflare Web Analytics -->
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ .Site.Params.analytics.cloudflare_token }}"}'></script>
+{{ end }}
 <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="{{ "/index.xml" | absURL }}">
 <link href="{{ "/pagefind/pagefind-ui.css" | relURL }}" rel="stylesheet">
 <script src="{{ "/pagefind/pagefind-ui.js" | relURL }}"></script>

@@ -16,6 +16,7 @@ theme = "weirdstl"
 
 [params.analytics]
   google_analytics_id = ""
+  cloudflare_token = "127aa36853a04c13a39c07805dba9226"
 
 [taxonomies]
   tag = "tags"
