@@ -2,8 +2,12 @@
 <div class="section-header">
   <h2 class="section-title">{{ .Title }}</h2>
 </div>
+{{ $pages := .Pages }}
+{{ if in (slice "historical" "current") .Section }}
+  {{ $pages = where site.RegularPages "Type" .Section }}
+{{ end }}
 <div class="masonry-grid">
-  {{ range .Pages.ByDate.Reverse }}
+  {{ range $pages.ByDate.Reverse }}
     {{ partial "card.html" . }}
   {{ end }}
 </div>
