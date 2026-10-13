@@ -4,10 +4,10 @@ date: 2024-11-10
 content_type: "historical"
 map_pin: true
 tags: ["lemp", "haunted", "south city", "beer barons"]
-summary: "Four suicides in three decades. A fortune dissolved overnight. A brewery sealed shut like a tomb. The Lemp family story is St. Louis's most operatic tragedy, and the mansion at 3322 DeMenil Place still carries every note of it."
+summary: "Four suicides in forty-five years. A fortune dissolved overnight. A brewery sealed shut like a tomb. The Lemp family story is St. Louis's most operatic tragedy, and the mansion at 3322 DeMenil Place still carries every note of it."
 ---
 
-The obituaries read like a dynasty under a curse. William J. Lemp Sr. shot himself in his office on a February morning in 1904, apparently consumed by grief over the death of his closest friend and son Frederick the year before. His daughter Elsa — the wealthiest heiress in St. Louis — shot herself in 1920. His son William Jr. shot himself in the same office as his father in 1922, reportedly leaving no note and having given away most of his possessions in the weeks prior. His son Charles shot himself in the mansion's basement in 1949, first shooting his dog so it wouldn't be left alone.
+The obituaries read like a dynasty under a curse. William J. Lemp Sr. shot himself in his office on a February morning in 1904, apparently consumed by grief over the death of his son Frederick in 1901 and, weeks earlier, his closest friend, Frederick Pabst. His daughter Elsa — the wealthiest heiress in St. Louis — shot herself in 1920. His son William Jr. shot himself in the same office as his father in 1922, reportedly leaving no note and having given away most of his possessions in the weeks prior. His son Charles shot himself in the mansion's basement in 1949, first shooting his dog so it wouldn't be left alone.
 
 The Lemps were once the royalty of St. Louis. Their Western Brewery, founded by Johann Adam Lemp in the 1840s, grew into an industrial empire that stretched beneath the city — literally. The family excavated a vast network of limestone caves under Cherokee Street, using the natural 60-degree temperature for lager fermentation decades before mechanical refrigeration existed. At their peak they employed over 700 workers and produced a million barrels a year.
 

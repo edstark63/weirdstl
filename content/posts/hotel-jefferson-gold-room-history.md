@@ -2,6 +2,8 @@
 title: "The Gold Room: A Ballroom Nobody Was Supposed to Find"
 date: 2026-04-08
 type: "historical"
+aliases:
+  - /posts/jefferson-hotel-reopening/
 map_pin: true
 map_location: "Jefferson Arms Building, 415 N Tucker Blvd, St. Louis, MO 63101"
 further_reading:
