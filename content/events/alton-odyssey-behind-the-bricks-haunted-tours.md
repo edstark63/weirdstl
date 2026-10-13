@@ -1,6 +1,6 @@
 ---
-title: "Alton Odyssey: Behind the Bricks Haunted Tours"
-description: "Alton Odyssey’s $40 Behind the Bricks tour visits five haunted and historic Alton locations on Saturday nights, with a ghost-hunt demonstration."
+title: "Alton’s Ghost Tour Begins With a Class Called Ghosts 101"
+description: "Alton Odyssey’s Behind the Bricks ghost tour opens with Ghosts 101, then visits the Enos Sanitarium and Hotel Stratford on Saturdays, October 17 and 24."
 date: 2026-10-12
 type: "event"
 featured: true
@@ -23,10 +23,22 @@ map_label: "Historic Grand Theatre, Alton, Illinois, 230 Market St., Alton, IL 6
 further_reading:
   - title: "Alton Odyssey: Behind the Bricks Haunted Tours — Rivers & Routes"
     url: "https://www.riversandroutes.com/events/alton-odyssey-behind-the-bricks-haunted-tours-2/"
+  - title: "Alton Odyssey Tours — reservations"
+    url: "https://www.altonodysseytours.com/reservations"
+  - title: "Hotel Stratford — Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Hotel_Stratford"
+  - title: "Haunted Alton — Distilled History"
+    url: "https://www.distilledhistory.com/hauntedalton/"
 ---
 
-Alton Odyssey Tours runs its Behind the Bricks Haunted Tours on Saturdays, October 17 and 24, from 8 to 11 p.m. Tickets are $40, and the tour starts at the Historic Grand Theatre, 230 Market Street, in Alton, Illinois.
+Alton Odyssey Tours will run its Behind the Bricks Haunted Tours on Saturdays, October 17 and 24, from 8 to 11 p.m., starting at the Historic Grand Theatre at 230 Market Street in Alton, Illinois. Tickets are $40, and participants must be at least 14. The tour opens with a session called Ghosts 101 and a demonstration of ghost-hunting tools before moving on to five stops, including the Enos Sanitarium and the Hilltop Room at the Hotel Stratford.
 
 <!--more-->
 
-The listing says the tour covers five historic and haunted locations, with a ghost-hunting demonstration and an interactive ghost hunt. Stops include the Enos Sanitarium and the Hilltop Room at the Stratford Hotel. Alton is billed as one of the most haunted small towns in America, and our story on [Alton’s Confederate prison](/posts/alton-confederate-prison/) covers one reason why.
+The Enos Sanitarium is the better-documented half of that itinerary. The building at East Third and George Streets began in 1857 as the mansion of Nathaniel Hanson, an abolitionist. Tradition holds that it was a stop on the Underground Railroad, with lanterns in its cupola signaling to people across the river in Missouri and limestone tunnels carved beneath the house. In 1911, Dr. W. H. Enos bought it and turned it into a tuberculosis sanatorium. The ghost stories, repeated in Alton ghost-lore, come from residents who report footsteps, screams and odd smells.
+
+The Hotel Stratford is the sturdier stop. It opened in 1909 as the Illini Hotel, designed by the St. Louis firm Barnett, Haynes & Barnett, and took its current name in 1925. It is the only hotel built in Alton before 1950 that still operates, and it has been on the National Register of Historic Places since 2000. The tour listing names the Hilltop Room but doesn’t say what is supposed to haunt it.
+
+Alton Odyssey says it has been running ghost tours since 1992, when local psychic Antoinette and Marlene Lewis teamed up. Alton is billed as one of the most haunted small towns in America, and our story on [Alton’s Confederate prison](/posts/alton-confederate-prison/) covers one reason why.
+
+Three hours, five stops and an orientation class. In most places, the dead get an introduction. In Alton, apparently, so do the visitors.
