@@ -1,5 +1,6 @@
 ---
 title: "The Missouri Historical Society Is Opening Its Storerooms for the Creepy Stuff"
+description: "On Saturday, October 24, the Missouri Historical Society opens its Library & Research Center storerooms for History After Dark, a Halloween-season event."
 date: 2026-10-12
 type: "current"
 map_pin: true

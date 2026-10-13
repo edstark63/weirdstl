@@ -1,5 +1,6 @@
 ---
 title: "Who Invented the Ice Cream Cone? St. Louis Has Seven Competing Answers"
+description: "St. Louis claims the ice cream cone for the 1904 World’s Fair, but at least seven people claim they invented it. Here are the competing answers."
 date: 2024-10-15
 content_type: "historical"
 map_pin: false

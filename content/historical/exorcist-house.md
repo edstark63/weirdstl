@@ -1,5 +1,6 @@
 ---
 title: "The House on Roanoke Drive: Where The Exorcist Actually Started"
+description: "In 1949 a teenager known as Roland Doe was exorcised in St. Louis, at Alexian Brothers Hospital and a Bel-Nor house. The real story behind The Exorcist."
 date: 2025-01-20
 content_type: "historical"
 map_pin: true

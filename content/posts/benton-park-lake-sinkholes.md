@@ -1,5 +1,6 @@
 ---
 title: "The Lake in Benton Park Is Leaking Into the Underworld"
+description: "Benton Park Lake in St. Louis has been losing water into sinkholes, which led to a 2025 emergency fish salvage order from state conservation officials."
 date: 2026-04-10
 type: "current"
 map_pin: true

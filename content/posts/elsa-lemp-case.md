@@ -1,5 +1,6 @@
 ---
 title: "Elsa Lemp Died Twelve Days After Remarrying Her Husband. A Documentary Says the Paperwork Doesn't Add Up."
+description: "Elsa Lemp Wright’s 1920 death was ruled a suicide. A group of St. Louis filmmakers argues the paperwork has problems. Here is what is documented and what is claimed."
 date: 2026-10-12
 type: "historical"
 map_pin: false

@@ -1,5 +1,6 @@
 ---
 title: "The Billionaire’s Backyard: The Unlikely History of Grant’s Farm"
+description: "How Grant’s Farm went from the Busch family’s private deer park to a public animal reserve, and what it says about Gilded Age St. Louis."
 date: 2026-05-01
 type: "historical"
 map_pin: true

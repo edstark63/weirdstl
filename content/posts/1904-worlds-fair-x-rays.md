@@ -1,5 +1,6 @@
 ---
 title: "The 1904 World's Fair and the X-Ray Future"
+description: "Visitors to the 1904 World’s Fair in St. Louis lined up to peer into a technology that could see through flesh. Some of the fair’s future was real."
 date: 2026-04-10
 type: "historical"
 map_pin: false

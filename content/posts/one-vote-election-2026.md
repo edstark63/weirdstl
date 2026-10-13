@@ -1,5 +1,6 @@
 ---
 title: "The Race That Was Decided by One Vote"
+description: "A St. Louis Board of Aldermen seat was decided by a single vote in the April 7, 2026 municipal election."
 date: 2026-04-09
 type: "current"
 map_pin: false

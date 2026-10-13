@@ -1,5 +1,6 @@
 ---
 title: "The Ax Murders of Saxtown"
+description: "In 1874 a German immigrant family was killed with an ax in Saxtown, Illinois, just south of Millstadt, and suspicion consumed the community."
 date: 2026-04-22
 type: "historical"
 map_pin: true

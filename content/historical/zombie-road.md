@@ -1,5 +1,6 @@
 ---
 title: "Zombie Road: The Most Haunted Two Miles in Missouri"
+description: "Zombie Road is the real Lawler Ford Road in Wildwood, Missouri, and the legends attached to it are numerous and contradictory."
 date: 2024-12-01
 content_type: "historical"
 map_pin: true

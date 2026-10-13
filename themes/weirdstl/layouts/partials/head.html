@@ -1,10 +1,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ if .IsHome }}{{ .Site.Title }} &mdash; {{ .Site.Params.description }}{{ else }}{{ .Title }} &mdash; {{ .Site.Title }}{{ end }}</title>
-{{- $desc := cond .IsHome .Site.Params.description (.Params.description | default (.Summary | plainify | truncate 160)) -}}
+{{- $desc := cond .IsHome (.Site.Params.homeDescription | default .Site.Params.description) (.Params.description | default (.Summary | plainify | truncate 160)) -}}
 {{- $title := cond .IsHome (printf "%s — %s" .Site.Title .Site.Params.description) (printf "%s — %s" .Title .Site.Title) -}}
 {{- $image := "" -}}
 {{- with .Params.image }}{{ $image = . | absURL }}{{ end -}}
+{{- if not $image }}{{ $image = "/images/og-default.jpg" | absURL }}{{ end -}}
+{{- if eq .Kind "404" }}<meta name="robots" content="noindex">{{ end }}
 <meta name="description" content="{{ $desc }}">
 <link rel="canonical" href="{{ .Permalink }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
@@ -49,3 +51,9 @@
 <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="{{ "/index.xml" | absURL }}">
 <link href="{{ "/pagefind/pagefind-ui.css" | relURL }}" rel="stylesheet">
 <script src="{{ "/pagefind/pagefind-ui.js" | relURL }}"></script>
+{{- if .IsHome }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" (slice (dict "@type" "WebSite" "name" .Site.Title "url" .Site.Home.Permalink "description" (.Site.Params.homeDescription | default .Site.Params.description)) (dict "@type" "Organization" "name" .Site.Title "url" .Site.Home.Permalink "logo" ("/images/og-default.jpg" | absURL))) | jsonify | safeJS }}</script>
+{{- end }}
+{{- if and .IsPage (not .Date.IsZero) (in (slice "historical" "current") .Type) }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" (slice (dict "@type" "ListItem" "position" 1 "name" "Home" "item" .Site.Home.Permalink) (dict "@type" "ListItem" "position" 2 "name" (cond (eq .Type "current") "Current" "Historical") "item" (printf "%s%s/" .Site.Home.Permalink .Type)) (dict "@type" "ListItem" "position" 3 "name" .Title "item" .Permalink)) | jsonify | safeJS }}</script>
+{{- end }}

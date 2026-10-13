@@ -1,5 +1,6 @@
 ---
 title: "The House That Sorrow Built: Lemp Mansion and the Family That Couldn't Stop Dying"
+description: "Four Lemp family suicides in 45 years, a sealed brewery and a haunted mansion on DeMenil Place: the tragedy of St. Louis’s beer barons."
 date: 2024-11-10
 content_type: "historical"
 map_pin: true

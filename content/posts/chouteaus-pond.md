@@ -1,5 +1,6 @@
 ---
 title: "Chouteau's Pond, the Lake St. Louis Turned Into an Open Sewer"
+description: "Chouteau’s Pond began as a 1766 millpond and ended as an open sewer that St. Louis drained as a matter of public health."
 date: 2026-04-10
 type: "historical"
 map_pin: false

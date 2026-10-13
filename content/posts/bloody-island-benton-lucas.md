@@ -1,5 +1,6 @@
 ---
 title: "The Duel That Gave Bloody Island Its Name"
+description: "The Benton–Lucas duel gave Bloody Island its name, back when St. Louis settled arguments by shooting lawyers on a Mississippi River sandbar."
 date: 2026-04-10
 type: "historical"
 map_pin: false

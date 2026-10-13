@@ -1,5 +1,6 @@
 ---
 title: "There Is a River Under Forest Park and Nobody Talks About It"
+description: "A camera crew went underground beneath Forest Park and found the River Des Peres, buried in tunnels most St. Louisans have walked over without knowing."
 date: 2026-08-22
 type: "current"
 map_pin: false

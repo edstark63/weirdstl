@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="not-found">
+  <div class="section-header">
+    <h2 class="section-title">That page has wandered off</h2>
+  </div>
+  <p class="not-found__lede">It may have been moved, retired, or never existed, which in St. Louis is hard to tell apart. Try the search at the top of the page, or head somewhere that exists.</p>
+  <p class="not-found__links">
+    <a href="{{ "/" | relURL }}">Home</a>
+    <a href="{{ "/historical/" | relURL }}">Historical</a>
+    <a href="{{ "/current/" | relURL }}">Current</a>
+    <a href="{{ "/map/" | relURL }}">Map</a>
+    <a href="{{ "/archive/" | relURL }}">Archive</a>
+  </p>
+  <h3 class="dig-deeper__heading" style="margin:2rem 0 1rem;">Recent stories</h3>
+  <div class="masonry-grid">
+    {{ range first 6 (where site.RegularPages "Type" "in" (slice "historical" "current")).ByDate.Reverse }}
+      {{ partial "card.html" . }}
+    {{ end }}
+  </div>
+</div>
+{{ end }}

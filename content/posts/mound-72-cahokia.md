@@ -1,5 +1,6 @@
 ---
 title: "Mound 72: The Burial Mound Across the River With 270 People in It"
+description: "Mound 72 at Cahokia, across the river from St. Louis, holds about 270 burials. A 2015 study changed what archaeologists thought they knew."
 date: 2026-10-12
 type: "historical"
 map_pin: true

@@ -1,5 +1,6 @@
 ---
 title: "The Gold Room: A Ballroom Nobody Was Supposed to Find"
+description: "Behind walls built in the 1950s, the old Hotel Jefferson in downtown St. Louis hid a ballroom that nobody touched for seven decades."
 date: 2026-04-08
 type: "historical"
 aliases:

@@ -9,6 +9,12 @@
   </div>
   {{ end }}
   <div class="footer-inner">
+    <nav class="footer-links" aria-label="Footer">
+      <a href="{{ "/archive/" | relURL }}">Archive</a>
+      <a href="{{ "/map/" | relURL }}">Map</a>
+      <a href="{{ "/privacy/" | relURL }}">Privacy</a>
+      <a href="{{ "/index.xml" | relURL }}">RSS</a>
+    </nav>
     <p class="footer-copy">&copy; {{ now.Year }} WeirdSTL &mdash; St. Louis, Missouri</p>
     <p class="footer-tagline"><em>{{ .Site.Params.motto }}</em></p>
   </div>

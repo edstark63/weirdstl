@@ -1,5 +1,6 @@
 ---
 title: "The Lemp Mansion Ghosts, Ranked by How Much Anyone Can Prove"
+description: "The Lemp Mansion’s ghost stories, sorted by how much anyone can actually prove, as the famous St. Louis landmark goes on the market for $3.9 million."
 date: 2026-10-12
 type: "historical"
 map_pin: true

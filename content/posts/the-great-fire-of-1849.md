@@ -1,5 +1,6 @@
 ---
 title: "The Night the River Set St. Louis on Fire"
+description: "On May 17, 1849, the steamboat White Cloud caught fire at the St. Louis levee, and the blaze took 23 steamboats and about 15 blocks of the city."
 date: 2026-04-10
 type: "historical"
 aliases:

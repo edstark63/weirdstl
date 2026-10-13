@@ -63,7 +63,7 @@
   <div id="search-panel" class="search-panel">
     <div id="search"></div>
   </div>
-  <main class="site-main">
+  <main class="site-main"{{ if not (and (eq .Kind "page") (in (slice "historical" "current") .Type)) }} data-pagefind-ignore="all"{{ end }}>
     {{- block "main" . }}{{- end }}
   </main>
   {{ partial "footer.html" . }}

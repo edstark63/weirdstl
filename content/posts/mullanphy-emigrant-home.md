@@ -1,5 +1,6 @@
 ---
 title: "Mullanphy Emigrant Home, or How St. Louis Once Tried to Welcome Strangers"
+description: "St. Louis once had a building meant to shelter poor immigrants on their way west. The history of the Mullanphy Emigrant Home."
 date: 2026-04-10
 type: "historical"
 map_pin: true

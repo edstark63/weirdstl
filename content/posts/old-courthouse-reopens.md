@@ -1,5 +1,6 @@
 ---
 title: "The Old Courthouse Reopens, Still Looking Better Than the Country It Helped Reveal"
+description: "The Old Courthouse in downtown St. Louis reopened on May 3, 2025 after a major renovation, with new exhibits and finally air conditioning."
 date: 2026-04-10
 type: "current"
 map_pin: true

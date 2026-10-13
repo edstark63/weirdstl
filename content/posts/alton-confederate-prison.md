@@ -1,5 +1,6 @@
 ---
 title: "Alton's Confederate Prison Lost 1,500 Men and Kept One Wall"
+description: "Alton, Illinois’s Civil War prison held about 11,700 people, lost at least 1,500, and left behind one wall, a cemetery and a ghost-tour reputation."
 date: 2026-10-12
 type: "historical"
 map_pin: true

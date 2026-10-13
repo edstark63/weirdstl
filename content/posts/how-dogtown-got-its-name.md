@@ -1,5 +1,6 @@
 ---
 title: "How Dogtown Got Its Name, and Why the Best Story Probably Isn't True"
+description: "Dogtown has several origin stories. The most dramatic one is also the least convincing, and here is why the best story probably isn’t true."
 date: 2026-04-10
 type: "historical"
 map_pin: false

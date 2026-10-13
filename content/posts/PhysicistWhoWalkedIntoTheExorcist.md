@@ -1,5 +1,6 @@
 ---
 title: "The Washington University Physicist Who Walked Into The Exorcist Story"
+description: "A Washington University physicist reportedly tried to explain the 1949 St. Louis exorcism with electromagnetism, then backed away: “This isn’t my territory.”"
 date: 2026-04-13
 type: "historical"
 map_pin: false

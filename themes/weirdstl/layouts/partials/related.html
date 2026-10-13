@@ -1,0 +1,22 @@
+{{ $key := printf "%s/%s" .Section .File.ContentBaseName }}
+{{ $ids := index hugo.Data.related $key }}
+{{ $items := slice }}
+{{ range $ids }}
+  {{ with site.GetPage (printf "/%s" .) }}{{ $items = $items | append . }}{{ end }}
+{{ end }}
+{{ if not $items }}
+  {{ $pool := where site.RegularPages "Type" .Type }}
+  {{ $pool = where $pool "Permalink" "ne" .Permalink }}
+  {{ $items = first 3 $pool.ByDate.Reverse }}
+{{ end }}
+{{ if $items }}
+<section class="related">
+  <hr class="post-rule">
+  <h2 class="dig-deeper__heading">More Strange Stories</h2>
+  <ul class="related-list">
+    {{ range $items }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a><span class="related-list__meta">{{ if eq (.Params.content_type | default .Type) "current" }}Current{{ else }}Historical{{ end }}</span></li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}

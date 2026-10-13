@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div class="section-header">
+  <h2 class="section-title">{{ .Title }}</h2>
+</div>
+<p class="map-intro">Every WeirdSTL story, newest first.</p>
+{{ range (where site.RegularPages "Type" "in" (slice "historical" "current")).GroupByDate "2006" }}
+<h3 class="archive-year">{{ .Key }}</h3>
+<ul class="archive-list">
+  {{ range .Pages.ByDate.Reverse }}
+  <li>
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2" }}</time>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <span class="badge badge--{{ .Params.content_type | default .Type }}">{{ if eq (.Params.content_type | default .Type) "current" }}CURRENT{{ else }}HISTORICAL{{ end }}</span>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}
+{{ end }}

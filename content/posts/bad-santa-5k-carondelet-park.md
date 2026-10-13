@@ -1,5 +1,6 @@
 ---
 title: "A Bad Santa 5K Is Running Through Carondelet Park on December 20"
+description: "The Bad Santa 5K runs through Carondelet Park in south St. Louis on Sunday, December 20, 2026, with free beer and a winter coat drive."
 date: 2026-10-12
 type: "current"
 map_pin: true

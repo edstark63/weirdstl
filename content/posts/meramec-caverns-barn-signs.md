@@ -1,5 +1,6 @@
 ---
 title: "The Man Who Painted America's Barns"
+description: "Before there were billboards, there were barns. The story of the man behind the famous Meramec Caverns barn signs."
 date: 2026-04-05
 type: "historical"
 map_pin: false

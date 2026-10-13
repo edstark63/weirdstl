@@ -1,5 +1,6 @@
 ---
 title: "The St. Louis Psychic Rescued From a Dumpster"
+description: "In 2016, an artist pulled family papers and reel-to-reel tapes of forgotten St. Louis psychic Carrie Seib out of a Lafayette Square dumpster."
 date: 2026-04-10
 type: "historical"
 map_pin: true

@@ -1,5 +1,6 @@
 ---
 title: "Six Flags Is Gone. The Internet Has Opinions About What Comes Next."
+description: "Six Flags St. Louis sold in March 2026 and will be renamed Mid-America by Enchanted Parks. The internet noticed the word “mid.”"
 date: 2026-04-09
 type: "current"
 map_pin: false

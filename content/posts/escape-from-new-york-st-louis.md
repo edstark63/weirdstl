@@ -1,5 +1,6 @@
 ---
 title: '"New York" Was Here'
+description: "Escape from New York was filmed in St. Louis: in 1980 a crew drove through downtown and found exactly the ruin it was looking for."
 date: 2026-04-01
 type: "historical"
 map_pin: false

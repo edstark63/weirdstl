@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div class="masonry-grid">
-  {{ range .Site.RegularPages.ByDate.Reverse }}
+  {{ range (where .Site.RegularPages "Type" "in" (slice "historical" "current")).ByDate.Reverse }}
     {{ partial "card.html" . }}
   {{ end }}
 </div>

@@ -1,5 +1,6 @@
 ---
 title: "The Neighborhood the City Erased"
+description: "Mill Creek Valley was a St. Louis neighborhood of 43 churches and hundreds of businesses that the city cleared and erased."
 date: 2026-04-10
 type: "historical"
 map_pin: true

@@ -1,5 +1,6 @@
 ---
 title: "The St. Louis Tornado of 2025 Came for the Vacancies"
+description: "On May 16, 2025, an EF3 tornado crossed north St. Louis in minutes and left damage that said something uncomfortable about vacancy in the city."
 date: 2026-03-12
 type: "current"
 map_pin: false

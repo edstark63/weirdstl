@@ -1,5 +1,6 @@
 ---
 title: "The St. Louis Doctor Who Kept His Daughter in a Cave"
+description: "In 1840 Dr. Joseph Nash McDowell founded a St. Louis medical school that required dissections. His daughter’s body ended up in a Hannibal cave."
 date: 2026-10-12
 type: "historical"
 map_pin: false

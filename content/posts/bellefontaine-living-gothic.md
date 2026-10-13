@@ -1,5 +1,6 @@
 ---
 title: "Bellefontaine Cemetery, Still the City's Best Gothic Day Trip"
+description: "Bellefontaine Cemetery keeps getting rediscovered as one of the best places to walk in St. Louis, and it happens to be full of the dead."
 date: 2026-04-10
 type: "current"
 map_pin: true

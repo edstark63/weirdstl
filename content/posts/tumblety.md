@@ -1,5 +1,6 @@
 ---
 title: "The St. Louis Quack Who Ended Up on the Jack the Ripper Suspect List"
+description: "Francis Tumblety, a patent-medicine quack who died in St. Louis in 1903, was called a “very likely” Jack the Ripper suspect by a retired Scotland Yard official."
 date: 2026-04-10
 type: "historical"
 map_pin: false

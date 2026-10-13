@@ -1,5 +1,6 @@
 ---
 title: "Before Your Pocket, Mobile Calls Began in a St. Louis Car"
+description: "On June 17, 1946, St. Louis got America’s first commercial mobile telephone service, from Southwestern Bell and AT&T’s Bell System."
 date: 2026-06-04
 type: "historical"
 map_pin: false

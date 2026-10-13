@@ -1,5 +1,6 @@
 ---
 title: "The Machine That Pressed St. Louis Into Shape"
+description: "T. S. Eliot’s father ran the Hydraulic-Press Brick Company in St. Louis, and its steam-powered presses helped pay for the poet’s career."
 date: 2026-06-04
 type: "historical"
 map_pin: false

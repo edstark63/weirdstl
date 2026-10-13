@@ -1,5 +1,6 @@
 ---
 title: "The 1904 Olympic Marathon Was a 26-Mile Medical Emergency"
+description: "St. Louis’s 1904 Olympic marathon had one water stop, a winner fueled by rat poison and a runner-up who hitched a ride in a car."
 date: 2026-06-04
 type: "historical"
 map_pin: false

@@ -1,5 +1,6 @@
 ---
 title: "Wind Phones and the Next Strange Thing St. Louis Cemeteries Could Do Right"
+description: "Wind phones, disconnected telephones where grieving people talk to the dead, could be the next strange thing St. Louis cemeteries get right."
 date: 2026-04-10
 type: "current"
 map_pin: false

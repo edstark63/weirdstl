@@ -1,5 +1,6 @@
 ---
 title: "Cherokee Cave and the Tourist Attraction Buried by the Highway"
+description: "St. Louis once charged a dollar to tour Cherokee Cave, a south city show cave with prehistoric bones, then buried it under Interstate 55."
 date: 2026-04-10
 type: "historical"
 map_pin: false

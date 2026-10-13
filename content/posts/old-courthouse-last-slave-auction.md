@@ -1,5 +1,6 @@
 ---
 title: "The Old Courthouse and the Last Slave Auction on Its Steps"
+description: "The Old Courthouse in downtown St. Louis can make visitors feel patriotic until they learn about the last slave auction held on its steps."
 date: 2026-04-10
 type: "historical"
 map_pin: true

@@ -1,5 +1,6 @@
 ---
 title: "The Gentle Giant of Alton"
+description: "Robert Wadlow of Alton, Illinois, was born a normal size and grew to become the tallest person in recorded history. His story, and the town that remembers him."
 date: 2026-04-03
 type: "historical"
 map_pin: false

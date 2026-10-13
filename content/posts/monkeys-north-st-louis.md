@@ -1,5 +1,6 @@
 ---
 title: "The Monkeys of North St. Louis — A Mystery the City Eventually Stopped Trying to Solve"
+description: "In January, reports of monkeys loose in north St. Louis became a mystery the city eventually stopped trying to solve."
 date: 2026-01-21
 type: "current"
 map_pin: false

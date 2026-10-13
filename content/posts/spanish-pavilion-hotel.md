@@ -1,5 +1,6 @@
 ---
 title: "The Jewel of New York Is a Hotel Lobby in Downtown St. Louis"
+description: "The Spanish Pavilion from the 1964 New York World’s Fair, once called the fair’s jewel by Life magazine, is now a hotel lobby in downtown St. Louis."
 date: 2026-03-25
 type: "historical"
 map_pin: true

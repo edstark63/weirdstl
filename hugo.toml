@@ -5,6 +5,7 @@ theme = "weirdstl"
 
 [params]
   description = "St. Louis · Strange and Overlooked"
+  homeDescription = "WeirdSTL tells the strange, haunted and overlooked stories of St. Louis: true history, local legends, unsolved mysteries and the odd news the city would rather forget."
   motto = "All the strangeness fit to print"
   comments_enabled = false
   email_enabled = false

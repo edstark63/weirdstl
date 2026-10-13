@@ -1,5 +1,6 @@
 ---
 title: "The Real St. Louis Exorcism and the House That Won't Stop Being a Landmark"
+description: "The real 1949 exorcism behind The Exorcist has a St. Louis chapter, and a Bel-Nor house the city cannot stop talking about."
 date: 2026-04-10
 type: "historical"
 map_pin: false

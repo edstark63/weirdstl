@@ -1,5 +1,6 @@
 ---
 title: "The Field Off Rock Road Where St. Louis Gangsters Practiced Shooting"
+description: "Egan’s Rats gangsters reportedly practiced shooting from moving cars at the old Maxwelton Race Track off St. Charles Rock Road in St. Louis County."
 date: 2026-04-19
 type: "historical"
 map_pin: true
