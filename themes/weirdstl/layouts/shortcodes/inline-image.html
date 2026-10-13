@@ -1,0 +1,4 @@
+<figure class="post-image">
+  <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" loading="lazy">
+  {{ with .Get "credit" }}<figcaption class="post-image__credit">{{ with $.Get "url" }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}{{ . }}{{ if $.Get "url" }}</a>{{ end }}</figcaption>{{ end }}
+</figure>
